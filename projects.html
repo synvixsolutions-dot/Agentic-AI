@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Projects | Agentic AI Club</title>
+    <meta name="description" content="Projects built by members of the Agentic AI Club at the Roux Institute, Northeastern University.">
+
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/club.css">
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+
+    <!-- ========================================
+         HEADER
+    ======================================== -->
+
+    <header class="topbar">
+        <div class="wrap topbar__inner">
+
+            <a class="logo" href="index.html" aria-label="Agentic AI Club home">
+                <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                    <rect class="logo__tile" width="48" height="48" rx="11" fill="#151a26"/>
+                    <path d="M15 14.5 24.5 24 15 33.5" fill="none" stroke="#fff" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    <rect x="26.5" y="30" width="10" height="4.6" rx="1.4" fill="#c62f3b"/>
+                </svg>
+                <span class="logo__text">
+                    <span class="logo__name">Agentic AI Club</span>
+                    <span class="logo__sub">Roux Institute · Northeastern</span>
+                </span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+                <span class="sr-only">Menu</span>
+                <span class="nav-toggle__bar nav-toggle__bar--top"></span>
+                <span class="nav-toggle__bar nav-toggle__bar--bottom"></span>
+            </button>
+
+            <nav id="site-nav" class="nav" aria-label="Main">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="events.html">Events</a>
+                <a href="projects.html" aria-current="page">Projects</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a class="btn btn--dark btn--sm nav__cta" href="join.html">Join the club</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main id="main">
+
+        <!-- ========================================
+             PAGE HEADER
+        ======================================== -->
+
+        <section class="page-head">
+            <svg class="page-head__glyph" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+                <path d="M36 32 104 100 36 168" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
+            <div class="wrap page-head__inner">
+                <div class="page-head__content">
+                    <p class="kicker"><span class="kicker__prompt">&gt;_</span> projects</p>
+                    <h1>Our Projects<span class="cursor" aria-hidden="true"></span></h1>
+                    <p class="lead">
+                        This is where club projects will live. We're just getting started, so there's
+                        nothing to show yet. The first project teams will form as the club gets going.
+                    </p>
+                </div>
+
+                <ul class="facts">
+                    <li>Built by student teams</li>
+                    <li>Any member can pitch an idea</li>
+                    <li>First projects coming soon</li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- ========================================
+             COMING SOON
+        ======================================== -->
+
+        <section class="section" aria-labelledby="soon-title">
+            <div class="wrap spotlight">
+
+                <div>
+                    <span class="label">Coming soon</span>
+                    <h2 id="soon-title">No projects yet. That's where you come in.</h2>
+                    <p class="spotlight__desc">
+                        Club projects will be built by small teams of members, from quick experiments to
+                        tools other students can actually use. Once the first ones are underway, you'll
+                        find them here: what they do, who's building them and where to see the code.
+                    </p>
+                    <a class="text-link" href="events.html">Meet the club at our first event</a>
+                </div>
+
+                <figure class="terminal" aria-label="Terminal showing an empty projects folder">
+                    <div class="terminal__bar" aria-hidden="true">
+                        <span></span><span></span><span></span>
+                        <p class="terminal__title">agentic-ai-club — zsh</p>
+                    </div>
+<pre class="terminal__body"><span class="t-prompt">$</span> <span class="t-strong">ls projects/</span>
+<span class="t-dim">total 0</span>
+
+<span class="t-prompt">$</span> <span class="t-strong">club new-project --idea "yours"</span>
+<span class="t-dim">› </span>looking for teammates...
+<span class="t-dim">› </span>waiting for the first pitch
+
+<span class="t-prompt">$</span> <span class="t-cursor"></span></pre>
+                </figure>
+
+            </div>
+        </section>
+
+
+        <!-- ========================================
+             ALL PROJECTS
+             Uncomment this section once the first projects exist.
+             Copy one <article class="project"> per project.
+             data-status: "in-progress" or "shipped".
+             data-open: "true" if the team wants contributors.
+        ======================================== -->
+
+        <!--
+        <section class="section section--warm" aria-labelledby="all-title">
+            <div class="wrap">
+
+                <div class="section-head">
+                    <div>
+                        <h2 id="all-title">All projects</h2>
+                        <p>Filter by status, or search by name, tool or language.</p>
+                    </div>
+                </div>
+
+                <div class="toolbar">
+                    <div class="tabs" role="group" aria-label="Filter projects by status">
+                        <button class="tab" type="button" data-project-filter="all" aria-pressed="true">All</button>
+                        <button class="tab" type="button" data-project-filter="in-progress" aria-pressed="false">In progress</button>
+                        <button class="tab" type="button" data-project-filter="shipped" aria-pressed="false">Shipped</button>
+                        <button class="tab" type="button" data-project-filter="open" aria-pressed="false">Open to contributors</button>
+                    </div>
+
+                    <label class="search">
+                        <span class="sr-only">Search projects</span>
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+                            <circle cx="7" cy="7" r="4.75"/>
+                            <path d="m10.5 10.5 3.5 3.5"/>
+                        </svg>
+                        <input type="search" placeholder="Search projects" data-project-search>
+                    </label>
+                </div>
+
+                <p class="result-count" data-project-count aria-live="polite"></p>
+
+                <div class="project-grid" data-project-grid>
+
+                    <article class="project" data-status="in-progress" data-open="true">
+                        <div class="project__top">
+                            <div class="project__badges">
+                                <span class="status status--progress">In progress</span>
+                                <span class="tag-open">Contributors wanted</span>
+                            </div>
+                            <span class="project__term">Spring 2027</span>
+                        </div>
+                        <h3>Project name</h3>
+                        <p class="project__desc">One or two sentences about what it does and who it's for.</p>
+                        <ul class="chips" aria-label="Tech stack">
+                            <li>Python</li><li>Tool</li>
+                        </ul>
+                        <div class="project__foot">
+                            <div class="team">
+                                <div class="avatars" aria-hidden="true"><span>AB</span><span>CD</span></div>
+                                2 members
+                            </div>
+                            <a class="project__link" href="REPO-LINK">GitHub →</a>
+                        </div>
+                    </article>
+
+                </div>
+
+                <p class="empty" data-project-empty hidden>No projects match that search.</p>
+
+            </div>
+        </section>
+        -->
+
+
+        <!-- ========================================
+             HOW PROJECTS WILL WORK
+        ======================================== -->
+
+        <section class="section section--warm" aria-labelledby="process-title">
+            <div class="wrap">
+
+                <div class="section-head">
+                    <div>
+                        <h2 id="process-title">How club projects will work</h2>
+                        <p>A simple path from idea to something you can show people.</p>
+                    </div>
+                </div>
+
+                <ol class="steps">
+                    <li class="step">
+                        <span class="step__num">01</span>
+                        <h3>Pitch an idea</h3>
+                        <p>Any member can pitch. A short description of the problem and a rough plan is enough to start.</p>
+                    </li>
+                    <li class="step">
+                        <span class="step__num">02</span>
+                        <h3>Form a team</h3>
+                        <p>Ideas that find a few interested members become club projects.</p>
+                    </li>
+                    <li class="step">
+                        <span class="step__num">03</span>
+                        <h3>Build together</h3>
+                        <p>Teams meet regularly, share progress with the club and get help when they're stuck.</p>
+                    </li>
+                    <li class="step">
+                        <span class="step__num">04</span>
+                        <h3>Show it off</h3>
+                        <p>Finished projects are demoed to the club and featured on this page.</p>
+                    </li>
+                </ol>
+
+            </div>
+        </section>
+
+
+        <!-- ========================================
+             CALL TO ACTION
+        ======================================== -->
+
+        <section class="section">
+            <div class="wrap cta">
+                <div>
+                    <h2>Have an idea worth building?</h2>
+                    <p>
+                        Tell us about it. Rough ideas are welcome, and we'll help you find people to
+                        build it with.
+                    </p>
+                </div>
+                <div class="actions">
+                    <a class="btn btn--dark" href="contact.html">
+                        Pitch an idea <span class="btn__arrow" aria-hidden="true">→</span>
+                    </a>
+                    <a class="btn btn--outline" href="join.html">Join the club</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ========================================
+         FOOTER
+    ======================================== -->
+
+    <footer class="footer">
+        <div class="wrap">
+
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a class="logo" href="index.html" aria-label="Agentic AI Club home">
+                        <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                            <rect class="logo__tile" width="48" height="48" rx="11" fill="#151a26"/>
+                            <path d="M15 14.5 24.5 24 15 33.5" fill="none" stroke="#fff" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/>
+                            <rect x="26.5" y="30" width="10" height="4.6" rx="1.4" fill="#c62f3b"/>
+                        </svg>
+                        <span class="logo__text">
+                            <span class="logo__name">Agentic AI Club</span>
+                            <span class="logo__sub">Roux Institute · Northeastern</span>
+                        </span>
+                    </a>
+                    <p class="footer__about">
+                        A student club for people who want to build, test and understand AI agents.
+                    </p>
+                </div>
+
+                <div>
+                    <h4>Club</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Get involved</h4>
+                    <ul>
+                        <li><a href="join.html">Join the club</a></li>
+                        <li><a href="blog.html">Blog &amp; newsletter</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Follow</h4>
+                    <ul>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <span>© <span data-year>2026</span> Agentic AI Club</span>
+                <span>Roux Institute at Northeastern University · Portland, Maine</span>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="js/club.js" defer></script>
+
+</body>
+
+</html>
