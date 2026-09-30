@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Join the Club | Agentic AI Club</title>
+    <meta name="description" content="Join the Agentic AI Club at the Roux Institute, Northeastern University. Free membership, no experience required.">
+
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/club.css">
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+
+    <!-- ========================================
+         HEADER
+    ======================================== -->
+
+    <header class="topbar">
+        <div class="wrap topbar__inner">
+
+            <a class="logo" href="index.html" aria-label="Agentic AI Club home">
+                <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                    <rect class="logo__tile" width="48" height="48" rx="11" fill="#151a26"/>
+                    <path d="M15 14.5 24.5 24 15 33.5" fill="none" stroke="#fff" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    <rect x="26.5" y="30" width="10" height="4.6" rx="1.4" fill="#c62f3b"/>
+                </svg>
+                <span class="logo__text">
+                    <span class="logo__name">Agentic AI Club</span>
+                    <span class="logo__sub">Roux Institute · Northeastern</span>
+                </span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+                <span class="sr-only">Menu</span>
+                <span class="nav-toggle__bar nav-toggle__bar--top"></span>
+                <span class="nav-toggle__bar nav-toggle__bar--bottom"></span>
+            </button>
+
+            <nav id="site-nav" class="nav" aria-label="Main">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="events.html">Events</a>
+                <a href="projects.html">Projects</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a class="btn btn--dark btn--sm nav__cta" href="join.html" aria-current="page">Join the club</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main id="main">
+
+        <!-- ========================================
+             PAGE HEADER
+        ======================================== -->
+
+        <section class="page-head">
+            <svg class="page-head__glyph" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+                <path d="M36 32 104 100 36 168" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
+            <div class="wrap page-head__inner">
+                <div class="page-head__content">
+                    <p class="kicker"><span class="kicker__prompt">&gt;_</span> join</p>
+                    <h1>Join the Club<span class="cursor" aria-hidden="true"></span></h1>
+                    <p class="lead">
+                        Membership is free and open to every Roux Institute student, whatever your program
+                        or background. If you're curious about AI agents, you'll fit in.
+                    </p>
+                </div>
+
+                <ul class="facts">
+                    <li>Free, no dues</li>
+                    <li>No experience required</li>
+                    <li>Sign-up takes about 3 minutes</li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- ========================================
+             WHY JOIN
+        ======================================== -->
+
+        <section class="section" aria-labelledby="why-title">
+            <div class="wrap">
+
+                <div class="section-head">
+                    <div>
+                        <h2 id="why-title">What you get as a member</h2>
+                        <p>Show up as often as you like. Here's what's waiting when you do.</p>
+                    </div>
+                </div>
+
+                <ol class="steps">
+                    <li class="step">
+                        <span class="step__num">01</span>
+                        <h3>Build real things</h3>
+                        <p>Work on projects that ship, with teammates who care about getting them right.</p>
+                    </li>
+                    <li class="step">
+                        <span class="step__num">02</span>
+                        <h3>Learn from practitioners</h3>
+                        <p>Workshops and talks on how agents are designed, built and tested in practice.</p>
+                    </li>
+                    <li class="step">
+                        <span class="step__num">03</span>
+                        <h3>Find teammates</h3>
+                        <p>Meet students across programs and find people for class projects, hackathons and co-ops.</p>
+                    </li>
+                    <li class="step">
+                        <span class="step__num">04</span>
+                        <h3>Show your work</h3>
+                        <p>Club projects give you something concrete to point to on your résumé and in interviews.</p>
+                    </li>
+                </ol>
+
+            </div>
+        </section>
+
+
+        <!-- ========================================
+             SIGN-UP FORM
+        ======================================== -->
+
+        <section class="section section--warm" id="apply" aria-labelledby="form-title">
+            <div class="wrap apply">
+
+                <div class="form-card">
+
+                    <form data-join-form novalidate>
+                        <h2 id="form-title">Membership sign-up</h2>
+                        <p class="form-card__intro">Fields marked optional can be skipped. Everything else helps us place you in the right sessions.</p>
+
+                        <div class="form-grid">
+
+                            <div class="field">
+                                <label class="field__label" for="firstName">First name</label>
+                                <input class="input" id="firstName" name="firstName" type="text" autocomplete="given-name" aria-describedby="firstName-error">
+                                <p class="error" id="firstName-error" aria-live="polite"></p>
+                            </div>
+
+                            <div class="field">
+                                <label class="field__label" for="lastName">Last name</label>
+                                <input class="input" id="lastName" name="lastName" type="text" autocomplete="family-name" aria-describedby="lastName-error">
+                                <p class="error" id="lastName-error" aria-live="polite"></p>
+                            </div>
+
+                            <div class="field field--full">
+                                <label class="field__label" for="email">Email</label>
+                                <input class="input" id="email" name="email" type="email" autocomplete="email" inputmode="email" aria-describedby="email-hint email-error">
+                                <p class="hint" id="email-hint">Your Northeastern email works best.</p>
+                                <p class="error" id="email-error" aria-live="polite"></p>
+                            </div>
+
+                            <div class="field">
+                                <label class="field__label" for="program">Program</label>
+                                <select class="input" id="program" name="program" aria-describedby="program-error">
+                                    <option value="">Select your program</option>
+                                    <option>MS in Computer Science</option>
+                                    <option>MS in Data Science</option>
+                                    <option>MS in Artificial Intelligence</option>
+                                    <option>MS in Information Systems</option>
+                                    <option>MPS in Analytics</option>
+                                    <option>Other</option>
+                                </select>
+                                <p class="error" id="program-error" aria-live="polite"></p>
+                            </div>
+
+                            <div class="field">
+                                <label class="field__label" for="graduation">Expected graduation <span class="optional">(optional)</span></label>
+                                <select class="input" id="graduation" name="graduation">
+                                    <option value="">Select a term</option>
+                                    <option>Spring 2027</option>
+                                    <option>Fall 2027</option>
+                                    <option>Spring 2028</option>
+                                    <option>Fall 2028</option>
+                                    <option>Later</option>
+                                </select>
+                            </div>
+
+                            <fieldset class="field field--full" data-group="experience" aria-describedby="experience-error">
+                                <legend class="field__label">Experience with AI</legend>
+                                <div class="choice-grid">
+                                    <label class="choice">
+                                        <input type="radio" name="experience" value="new">
+                                        <span><strong>Just starting</strong><small>Curious, not much hands-on yet</small></span>
+                                    </label>
+                                    <label class="choice">
+                                        <input type="radio" name="experience" value="some">
+                                        <span><strong>Some experience</strong><small>Courses or a few ML projects</small></span>
+                                    </label>
+                                    <label class="choice">
+                                        <input type="radio" name="experience" value="builder">
+                                        <span><strong>I've built agents</strong><small>Happy to help others too</small></span>
+                                    </label>
+                                </div>
+                                <p class="error" id="experience-error" aria-live="polite"></p>
+                            </fieldset>
+
+                            <fieldset class="field field--full" data-group="interests" aria-describedby="interests-error">
+                                <legend class="field__label">What are you interested in?</legend>
+                                <div class="pill-group">
+                                    <label class="pill"><input type="checkbox" name="interests" value="workshops"><span>Workshops</span></label>
+                                    <label class="pill"><input type="checkbox" name="interests" value="projects"><span>Building projects</span></label>
+                                    <label class="pill"><input type="checkbox" name="interests" value="hackathons"><span>Hackathons</span></label>
+                                    <label class="pill"><input type="checkbox" name="interests" value="paper-club"><span>Research papers</span></label>
+                                    <label class="pill"><input type="checkbox" name="interests" value="talks"><span>Speaker talks</span></label>
+                                    <label class="pill"><input type="checkbox" name="interests" value="organizing"><span>Helping organize</span></label>
+                                </div>
+                                <p class="error" id="interests-error" aria-live="polite"></p>
+                            </fieldset>
+
+                            <div class="field field--full">
+                                <label class="field__label" for="goals">Anything you'd like to build or learn? <span class="optional">(optional)</span></label>
+                                <textarea class="input" id="goals" name="goals" rows="4" maxlength="500"></textarea>
+                                <span class="counter" data-counter-for="goals" aria-hidden="true"></span>
+                            </div>
+
+                            <div class="field field--full">
+                                <label class="check">
+                                    <input type="checkbox" name="newsletter" value="yes">
+                                    Send me the club newsletter.
+                                </label>
+                            </div>
+
+                        </div>
+
+                        <div class="form-foot">
+                            <small>We only use your details to run the club. We never share them.</small>
+                            <button class="btn btn--primary" type="submit">
+                                Submit sign-up <span class="btn__arrow" aria-hidden="true">→</span>
+                            </button>
+                        </div>
+                    </form>
+
+                    <div class="success" data-join-success tabindex="-1" hidden>
+                        <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                            <rect width="48" height="48" rx="11" fill="#151a26"/>
+                            <path d="M15 14.5 24.5 24 15 33.5" fill="none" stroke="#fff" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/>
+                            <rect x="26.5" y="30" width="10" height="4.6" rx="1.4" fill="#c62f3b"/>
+                        </svg>
+                        <h2>Thanks, <span data-success-name></span>. You're on the list.</h2>
+                        <p>
+                            We'll email <strong data-success-email></strong> with next steps. Our first
+                            event is Coffee and Agents on Saturday, Oct 17. We'd love to see you there.
+                        </p>
+                        <div class="actions">
+                            <a class="btn btn--dark" href="events.html">
+                                See upcoming events <span class="btn__arrow" aria-hidden="true">→</span>
+                            </a>
+                            <a class="text-link" href="projects.html">Browse projects</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <aside class="aside" aria-label="After you sign up">
+                    <div class="aside-card">
+                        <h3>What happens next</h3>
+                        <ol class="timeline">
+                            <li>
+                                <span class="timeline__num">01</span>
+                                <strong>We read every sign-up</strong>
+                                <p>A club organizer will get back to you by email.</p>
+                            </li>
+                            <li>
+                                <span class="timeline__num">02</span>
+                                <strong>Welcome email</strong>
+                                <p>How to stay in touch and what's coming up next.</p>
+                            </li>
+                            <li>
+                                <span class="timeline__num">03</span>
+                                <strong>Come to an event</strong>
+                                <p>Our first is Coffee and Agents, Sat, Oct 17, 10 AM in Room 201.</p>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="aside-note">
+                        Questions before signing up?
+                        <a class="text-link" href="contact.html">Get in touch</a>
+                        and one of the organizers will reply.
+                    </div>
+                </aside>
+
+            </div>
+        </section>
+
+
+        <!-- ========================================
+             FAQ
+        ======================================== -->
+
+        <section class="section" aria-labelledby="faq-title">
+            <div class="wrap faq-layout">
+
+                <div>
+                    <h2 id="faq-title">Common questions</h2>
+                    <p>Can't find what you need? <a class="text-link" href="contact.html">Ask us directly</a>.</p>
+                </div>
+
+                <div class="faq">
+                    <details>
+                        <summary>Do I need AI or coding experience?</summary>
+                        <p class="faq__answer">
+                            No. The club is for anyone curious about AI agents, whether you've built
+                            one before or are just getting started. Events are designed so you can
+                            follow along from scratch.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>Is there a membership fee?</summary>
+                        <p class="faq__answer">
+                            No. Membership and events are free.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>How much time does it take?</summary>
+                        <p class="faq__answer">
+                            As much as you want to give it. Come to the events that interest you, and
+                            join a project team if and when you want to go deeper.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>Can students from other Northeastern campuses join?</summary>
+                        <p class="faq__answer">
+                            Yes. Events are held at the Roux Institute in Portland, but anyone from
+                            Northeastern is welcome to sign up and get involved.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>Can I join partway through the semester?</summary>
+                        <p class="faq__answer">
+                            Any time. Sign up whenever you're ready and come to the next event.
+                        </p>
+                    </details>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ========================================
+         FOOTER
+    ======================================== -->
+
+    <footer class="footer">
+        <div class="wrap">
+
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a class="logo" href="index.html" aria-label="Agentic AI Club home">
+                        <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                            <rect class="logo__tile" width="48" height="48" rx="11" fill="#151a26"/>
+                            <path d="M15 14.5 24.5 24 15 33.5" fill="none" stroke="#fff" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/>
+                            <rect x="26.5" y="30" width="10" height="4.6" rx="1.4" fill="#c62f3b"/>
+                        </svg>
+                        <span class="logo__text">
+                            <span class="logo__name">Agentic AI Club</span>
+                            <span class="logo__sub">Roux Institute · Northeastern</span>
+                        </span>
+                    </a>
+                    <p class="footer__about">
+                        A student club for people who want to build, test and understand AI agents.
+                    </p>
+                </div>
+
+                <div>
+                    <h4>Club</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Get involved</h4>
+                    <ul>
+                        <li><a href="join.html">Join the club</a></li>
+                        <li><a href="blog.html">Blog &amp; newsletter</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Follow</h4>
+                    <ul>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <span>© <span data-year>2026</span> Agentic AI Club</span>
+                <span>Roux Institute at Northeastern University · Portland, Maine</span>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="js/club.js" defer></script>
+
+</body>
+
+</html>

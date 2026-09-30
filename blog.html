@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Newsletter | Agentic AI Club</title>
+    <meta name="description" content="Insights, updates and stories from the Agentic AI Club.">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/club.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="topbar">
+        <div class="wrap topbar__inner">
+
+            <a class="logo" href="index.html" aria-label="Agentic AI Club home">
+                <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                    <rect class="logo__tile" width="48" height="48" rx="11" fill="#151a26"/>
+                    <path d="M15 14.5 24.5 24 15 33.5" fill="none" stroke="#fff" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    <rect x="26.5" y="30" width="10" height="4.6" rx="1.4" fill="#c62f3b"/>
+                </svg>
+                <span class="logo__text">
+                    <span class="logo__name">Agentic AI Club</span>
+                    <span class="logo__sub">Roux Institute · Northeastern</span>
+                </span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+                <span class="sr-only">Menu</span>
+                <span class="nav-toggle__bar nav-toggle__bar--top"></span>
+                <span class="nav-toggle__bar nav-toggle__bar--bottom"></span>
+            </button>
+
+            <nav id="site-nav" class="nav" aria-label="Main">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="events.html">Events</a>
+                <a href="projects.html">Projects</a>
+                <a href="blog.html" aria-current="page">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a class="btn btn--dark btn--sm nav__cta" href="join.html">Join the club</a>
+            </nav>
+
+        </div>
+    </header>
+<main id="main">
+    <section class="page-head">
+        <svg class="page-head__glyph" viewBox="0 0 200 200" aria-hidden="true">
+            <path d="M36 32 104 100 36 168" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="wrap page-head__inner">
+            <div class="page-head__content">
+                <p class="kicker"><span class="kicker__prompt">&gt;_</span> Insights • Updates • Stories</p>
+                <h1>Blog &amp; Newsletter<span class="cursor" aria-hidden="true"></span></h1>
+                <p class="lead">Insights, updates and stories from the club.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section blog-club-section">
+        <div class="wrap">
+            <div class="club-filter-row" aria-label="Blog categories">
+                <button class="club-filter active" data-filter="all">All</button>
+                <button class="club-filter" data-filter="news">News</button>
+                <button class="club-filter" data-filter="articles">Articles</button>
+                <button class="club-filter" data-filter="events">Events</button>
+                <button class="club-filter" data-filter="resources">Resources</button>
+            </div>
+
+            <div class="club-post-grid">
+                <article class="club-post-card" data-category="articles">
+                    <div class="club-post-image"><span>AI</span></div>
+                    <div class="club-post-content">
+                        <span class="label">Articles | 5 min read</span>
+                        <h3>The Future of Agentic AI</h3>
+                        <a href="#" class="editorial-link">Read More <span>→</span></a>
+                    </div>
+                </article>
+                <article class="club-post-card" data-category="articles">
+                    <div class="club-post-image"><span>AI</span></div>
+                    <div class="club-post-content">
+                        <span class="label">Articles | 7 min read</span>
+                        <h3>Building Your First AI Agent</h3>
+                        <a href="#" class="editorial-link">Read More <span>→</span></a>
+                    </div>
+                </article>
+                <article class="club-post-card" data-category="resources">
+                    <div class="club-post-image"><span>AI</span></div>
+                    <div class="club-post-content">
+                        <span class="label">Resources | 6 min read</span>
+                        <h3>Top Tools for AI Development</h3>
+                        <a href="#" class="editorial-link">Read More <span>→</span></a>
+                    </div>
+                </article>
+                <article class="club-post-card" data-category="events">
+                    <div class="club-post-image"><span>AI</span></div>
+                    <div class="club-post-content">
+                        <span class="label">Events | 4 min read</span>
+                        <h3>Event Highlights: Hackathon 2025</h3>
+                        <a href="#" class="editorial-link">Read More <span>→</span></a>
+                    </div>
+                </article>
+            </div>
+            <p class="club-empty-state" hidden>No posts found in this category.</p>
+        </div>
+    </section>
+
+    <section class="cta-band">
+        <div class="wrap club-newsletter">
+            <div>
+                <span class="label club-newsletter__label">Newsletter</span>
+                <h2>Subscribe to our Newsletter</h2>
+                <p>Get the latest updates, events and resources.</p>
+            </div>
+            <form class="club-newsletter-form" novalidate>
+                <label class="sr-only" for="newsletter-email">Email address</label>
+                <input id="newsletter-email" type="email" placeholder="Enter your email" autocomplete="email" required>
+                <button class="btn btn--dark" type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+        <div class="wrap">
+
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a class="logo" href="index.html" aria-label="Agentic AI Club home">
+                        <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                            <rect class="logo__tile" width="48" height="48" rx="11" fill="#151a26"/>
+                            <path d="M15 14.5 24.5 24 15 33.5" fill="none" stroke="#fff" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/>
+                            <rect x="26.5" y="30" width="10" height="4.6" rx="1.4" fill="#c62f3b"/>
+                        </svg>
+                        <span class="logo__text">
+                            <span class="logo__name">Agentic AI Club</span>
+                            <span class="logo__sub">Roux Institute · Northeastern</span>
+                        </span>
+                    </a>
+                    <p class="footer__about">
+                        A student club for people who want to build, test and understand AI agents.
+                    </p>
+                </div>
+
+                <div>
+                    <h4>Club</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Get involved</h4>
+                    <ul>
+                        <li><a href="join.html">Join the club</a></li>
+                        <li><a href="blog.html">Blog &amp; newsletter</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Follow</h4>
+                    <ul>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <span>© <span data-year>2026</span> Agentic AI Club</span>
+                <span>Roux Institute at Northeastern University · Portland, Maine</span>
+            </div>
+
+        </div>
+    </footer>
+<script src="js/club.js"></script>
+</body>
+</html>
