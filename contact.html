@@ -2,136 +2,63 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Contact Us | Agentic AI Club</title>
 
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 
-    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com"
-    >
-
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap"
-        rel="stylesheet"
-    >
-
-
-    <!-- Main CSS -->
-
-    <link
-        rel="stylesheet"
-        href="css/style.css"
-    >
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 
 <body>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
 
 
     <!-- =================================
          NAVBAR
     ================================== -->
 
-    <header class="site-header">
+    <header class="topbar">
+        <div class="wrap topbar__inner">
 
-        <nav class="navbar container">
-
-
-            <!-- Logo -->
-
-            <a
-                href="index.html"
-                class="brand"
-            >
-
-                <span class="brand-mark">
-                    A
+            <a class="logo" href="index.html" aria-label="Agentic AI Club home">
+                <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                    <rect class="logo__tile" width="48" height="48" rx="11" fill="#151a26"/>
+                    <path d="M15 14.5 24.5 24 15 33.5" fill="none" stroke="#fff" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    <rect x="26.5" y="30" width="10" height="4.6" rx="1.4" fill="#c62f3b"/>
+                </svg>
+                <span class="logo__text">
+                    <span class="logo__name">Agentic AI Club</span>
+                    <span class="logo__sub">Roux Institute · Northeastern</span>
                 </span>
-
-                <span>
-                    Agentic AI Club
-                </span>
-
             </a>
 
-
-
-            <!-- Mobile menu -->
-
-            <button
-                class="menu-toggle"
-                type="button"
-                aria-label="Open navigation"
-                aria-expanded="false"
-            >
-                ☰
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+                <span class="sr-only">Menu</span>
+                <span class="nav-toggle__bar nav-toggle__bar--top"></span>
+                <span class="nav-toggle__bar nav-toggle__bar--bottom"></span>
             </button>
 
+            <nav id="site-nav" class="nav" aria-label="Main">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="events.html">Events</a>
+                <a href="projects.html">Projects</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html" aria-current="page">Contact</a>
+                <a class="btn btn--dark btn--sm nav__cta" href="join.html">Join the club</a>
+            </nav>
 
-
-            <!-- Navigation -->
-
-            <div class="nav-links">
-
-                <a href="index.html">
-                    Home
-                </a>
-
-                <a href="about.html">
-                    About
-                </a>
-
-                <a href="events.html">
-                    Events
-                </a>
-
-                <a href="projects.html">
-                    Projects
-                </a>
-
-                <a href="blog.html">
-                    Blog
-                </a>
-
-                <a href="join.html">
-                    Join
-                </a>
-
-                <a
-                    href="contact.html"
-                    class="active"
-                >
-                    Contact
-                </a>
-
-                <a
-                    href="join.html"
-                    class="nav-cta"
-                >
-                    Join Now
-                </a>
-
-            </div>
-
-        </nav>
-
+        </div>
     </header>
 
 
@@ -140,31 +67,25 @@
          MAIN
     ================================== -->
 
-    <main>
+    <main id="main">
 
 
         <!-- =================================
              HERO
         ================================== -->
 
-        <section class="page-hero contact-hero">
+        <section class="page-head">
+            <svg class="page-head__glyph" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+                <path d="M36 32 104 100 36 168" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
 
-            <div class="container">
-
-                <p class="eyebrow">
-                    Get in touch
-                </p>
-
-                <h1>
-                    Contact Us
-                </h1>
-
-                <p>
-                    We'd love to hear from you.
-                </p>
-
+            <div class="wrap page-head__inner">
+                <div class="page-head__content">
+                    <p class="kicker"><span class="kicker__prompt">&gt;_</span> Get in touch</p>
+                    <h1>Contact Us<span class="cursor" aria-hidden="true"></span></h1>
+                    <p class="lead">We'd love to hear from you.</p>
+                </div>
             </div>
-
         </section>
 
 
@@ -286,7 +207,18 @@
 
                 <!-- Map placeholder -->
 
-                <div class="map-placeholder">
+                <!-- Quick answers -->
+            <div class="quick-faq">
+                <p class="label">Quick answers</p>
+                <ul>
+                    <li><a href="faq.html#faq-experience"><span class="quick-faq__prompt">&gt;_</span> Do I need previous AI experience?</a></li>
+                    <li><a href="faq.html#faq-who"><span class="quick-faq__prompt">&gt;_</span> Who can join the club?</a></li>
+                    <li><a href="faq.html#faq-projects"><span class="quick-faq__prompt">&gt;_</span> Where can I find the club's projects?</a></li>
+                    <li><a href="faq.html#faq-github"><span class="quick-faq__prompt">&gt;_</span> Does the club have a GitHub repository?</a></li>
+                </ul>
+            </div>
+
+            <div class="map-placeholder">
 
                     <span>
                         Map / Location
@@ -302,76 +234,99 @@
                  RIGHT SIDE - CONTACT FORM
             ================================== -->
 
+            <div class="contact-card">
+
             <form
                 class="contact-form"
                 id="contactForm"
+                novalidate
+                data-contact-form
             >
 
-
-                <!-- Name -->
-
-                <label>
-
-                    Name
-
+                <div class="field">
+                    <label class="field__label" for="contact-name">Name</label>
                     <input
+                        class="input"
+                        id="contact-name"
                         type="text"
                         name="name"
                         placeholder="Enter your name"
                         autocomplete="name"
-                        required
+                        aria-describedby="name-error"
                     >
+                    <p class="error" id="name-error" aria-live="polite"></p>
+                </div>
 
-                </label>
-
-
-
-                <!-- Email -->
-
-                <label>
-
-                    Email
-
+                <div class="field">
+                    <label class="field__label" for="contact-email">Email</label>
                     <input
+                        class="input"
+                        id="contact-email"
                         type="email"
                         name="email"
                         placeholder="Enter your email"
                         autocomplete="email"
-                        required
+                        aria-describedby="email-error"
                     >
+                    <p class="error" id="email-error" aria-live="polite"></p>
+                </div>
 
-                </label>
+                <fieldset class="field" data-group="topic" aria-describedby="topic-error">
+                    <legend class="field__label">What's this about?</legend>
+                    <div class="pill-group">
+                        <label class="pill"><input type="radio" name="topic" value="join"><span>Join the club</span></label>
+                        <label class="pill"><input type="radio" name="topic" value="collaborate"><span>Collaborate</span></label>
+                        <label class="pill"><input type="radio" name="topic" value="speak"><span>Speak at an event</span></label>
+                        <label class="pill"><input type="radio" name="topic" value="general"><span>Something else</span></label>
+                    </div>
+                    <p class="topic-hint" data-topic-hint aria-live="polite" hidden></p>
+                    <p class="error" id="topic-error" aria-live="polite"></p>
+                </fieldset>
 
-
-
-                <!-- Message -->
-
-                <label>
-
-                    Message
-
+                <div class="field">
+                    <label class="field__label" for="contact-message">Message</label>
                     <textarea
+                        class="input"
+                        id="contact-message"
                         name="message"
                         rows="7"
+                        maxlength="500"
                         placeholder="Type your message"
-                        required
+                        aria-describedby="message-error"
                     ></textarea>
-
-                </label>
-
-
-
-                <!-- Submit -->
+                    <span class="counter" data-counter-for="message" aria-hidden="true"></span>
+                    <p class="error" id="message-error" aria-live="polite"></p>
+                </div>
 
                 <button
                     type="submit"
-                    class="btn primary full"
+                    class="btn btn--primary full"
                 >
-                    Send Message
+                    Send Message <span class="btn__arrow" aria-hidden="true">→</span>
                 </button>
 
-
             </form>
+
+            <div class="success contact-success" data-contact-success tabindex="-1" hidden>
+                <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                    <rect width="48" height="48" rx="11" fill="#151a26"/>
+                    <path d="M15 14.5 24.5 24 15 33.5" fill="none" stroke="#fff" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    <rect x="26.5" y="30" width="10" height="4.6" rx="1.4" fill="#c62f3b"/>
+                </svg>
+                <h2>Thanks, <span data-success-name></span>. Message received.</h2>
+                <p>
+                    <span data-success-topic></span>
+                    We'll reply to <strong data-success-email></strong> as soon as we can.
+                </p>
+                <div class="actions">
+                    <a class="btn btn--dark" href="faq.html">
+                        Browse the FAQ <span class="btn__arrow" aria-hidden="true">→</span>
+                    </a>
+                    <button class="link-btn" type="button" data-contact-reset>Send another message</button>
+                </div>
+            </div>
+
+            </div>
 
         </section>
 
@@ -383,87 +338,62 @@
          FOOTER
     ================================== -->
 
-    <footer class="site-footer">
+    <footer class="footer">
+        <div class="wrap">
 
-        <div class="container footer-top">
-
-
-            <div class="footer-brand">
-
-                <a
-                    href="index.html"
-                    class="brand"
-                >
-
-                    <span class="brand-mark">
-                        A
-                    </span>
-
-                    <span>
-                        Agentic AI Club
-                    </span>
-
-                </a>
-
-
-                <div class="footer-socials">
-
-                    <a href="#">in</a>
-
-                    <a href="#">X</a>
-
-                    <a href="#">GH</a>
-
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a class="logo" href="index.html" aria-label="Agentic AI Club home">
+                        <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                            <rect class="logo__tile" width="48" height="48" rx="11" fill="#151a26"/>
+                            <path d="M15 14.5 24.5 24 15 33.5" fill="none" stroke="#fff" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/>
+                            <rect x="26.5" y="30" width="10" height="4.6" rx="1.4" fill="#c62f3b"/>
+                        </svg>
+                        <span class="logo__text">
+                            <span class="logo__name">Agentic AI Club</span>
+                            <span class="logo__sub">Roux Institute · Northeastern</span>
+                        </span>
+                    </a>
+                    <p class="footer__about">
+                        A student club for people who want to build, test and understand AI agents.
+                    </p>
                 </div>
 
+                <div>
+                    <h4>Club</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Get involved</h4>
+                    <ul>
+                        <li><a href="join.html">Join the club</a></li>
+                        <li><a href="blog.html">Blog &amp; newsletter</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Follow</h4>
+                    <ul>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">X</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
             </div>
 
-
-
-            <div class="footer-links">
-
-                <a href="index.html">
-                    Home
-                </a>
-
-                <a href="about.html">
-                    About
-                </a>
-
-                <a href="events.html">
-                    Events
-                </a>
-
-                <a href="projects.html">
-                    Projects
-                </a>
-
-                <a href="blog.html">
-                    Blog
-                </a>
-
-                <a href="join.html">
-                    Join
-                </a>
-
-                <a href="contact.html">
-                    Contact
-                </a>
-
+            <div class="footer__bottom">
+                <span>© 2025 Agentic AI Club. All rights reserved.</span>
             </div>
 
         </div>
-
-
-
-        <div class="container footer-bottom">
-
-            <span>
-                © 2025 Agentic AI Club. All rights reserved.
-            </span>
-
-        </div>
-
     </footer>
 
 
