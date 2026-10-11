@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agentic AI Club | Roux Institute</title>
+
+    <meta
+        name="description"
+        content="Agentic AI Club at the Roux Institute — a student community exploring, building and experimenting with agentic AI."
+    >
+
+    <link
+        rel="icon"
+        href="assets/favicon.svg"
+        type="image/svg+xml"
+    >
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Stylesheets -->
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Single-page scrolling styles -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 88px;
+        }
+
+        #home,
+        .single-page-section {
+            scroll-margin-top: 88px;
+        }
+
+        .single-page-section > .page-head {
+            scroll-margin-top: 88px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Skip Navigation -->
+    <a class="skip-link" href="#main">
+        Skip to content
+    </a>
+
+    <!-- Header -->
+    <header class="topbar">
+        <div class="wrap topbar__inner">
+
+            <!-- Brand Logo -->
+            <a
+                class="logo"
+                href="#home"
+                data-nav-link="home"
+                aria-label="Agentic AI Club home"
+                aria-current="page"
+            >
+                <svg
+                    class="logo__mark"
+                    viewBox="0 0 48 48"
+                    aria-hidden="true"
+                >
+                    <rect
+                        class="logo__tile"
+                        width="48"
+                        height="48"
+                        rx="11"
+                        fill="#151a26"
+                    ></rect>
+
+                    <path
+                        d="M15 14.5 24.5 24 15 33.5"
+                        fill="none"
+                        stroke="#fff"
+                        stroke-width="4.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    ></path>
+
+                    <rect
+                        x="26.5"
+                        y="30"
+                        width="10"
+                        height="4.6"
+                        rx="1.4"
+                        fill="#c62f3b"
+                    ></rect>
+                </svg>
+
+                <span class="logo__text">
+                    <span class="logo__name">
+                        Agentic AI Club
+                    </span>
+
+                    <span class="logo__sub">
+                        Roux Institute · Northeastern
+                    </span>
+                </span>
+            </a>
+
+            <!-- Mobile Navigation Toggle -->
+            <button
+                class="nav-toggle"
+                type="button"
+                aria-controls="site-nav"
+                aria-expanded="false"
+            >
+                <span class="sr-only">Menu</span>
+                <span class="nav-toggle__bar nav-toggle__bar--top"></span>
+                <span class="nav-toggle__bar nav-toggle__bar--bottom"></span>
+            </button>
+
+            <!-- Main Navigation -->
+            <nav class="nav" id="site-nav" aria-label="Main">
+                <a href="#home" aria-current="page">Home</a>
+                <a href="#about" data-nav-link="about">About</a>
+                <a href="#events" data-nav-link="events">Events</a>
+                <a href="#projects" data-nav-link="projects">Projects</a>
+                <a href="#blog" data-nav-link="blog">Blog</a>
+                <a href="#contact" data-nav-link="contact">Contact</a>
+                <a href="#join" data-nav-link="join">Join</a>
+                <a href="#faq" data-nav-link="faq">FAQ</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main">
+
+        <!-- Home / Hero Section -->
+        <section
+            class="home-hero"
+            id="home"
+            data-nav-section="home"
+        >
+            <div class="wrap">
+                <div class="home-hero__content">
+
+                    <p class="home-hero__kicker">
+                        Agentic AI Club
+                    </p>
+
+                    <h1>
+                        Where
+                        <span class="accent">Agentic AI</span>
+                        Moves from Theory to Reality.
+                    </h1>
+
+                    <p class="home-hero__lead">
+                        A student-led community at the Roux Institute
+                        exploring agentic AI through learning,
+                        experimentation, collaboration, and real-world projects.
+                    </p>
+
+                    <div class="home-hero__actions">
+                        <a class="btn btn--primary" href="#about">
+                            About the Club
+                            <span class="btn__arrow" aria-hidden="true">→</span>
+                        </a>
+                    </div>
+
+                    <div class="home-hero__meta">
+                        <span>Learn</span>
+                        <span>Experiment</span>
+                        <span>Build</span>
+                        <span>Innovate</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <!-- About Section -->
+        <section
+            class="single-page-section"
+            id="about"
+            data-nav-section="about"
+        >
+            <div
+                data-section-content="about"
+                aria-live="polite"
+            >
+                <p class="section-loading">
+                    Loading About…
+                </p>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section
+            class="single-page-section"
+            id="events"
+            data-nav-section="events"
+        >
+            <div
+                data-section-content="events"
+                aria-live="polite"
+            >
+                <p class="section-loading">
+                    Loading Events…
+                </p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section
+            class="single-page-section"
+            id="projects"
+            data-nav-section="projects"
+        >
+            <div
+                data-section-content="projects"
+                aria-live="polite"
+            >
+                <p class="section-loading">
+                    Loading Projects…
+                </p>
+            </div>
+        </section>
+
+        <!-- Blog and Newsletter Section -->
+        <section
+            class="single-page-section"
+            id="blog"
+            data-nav-section="blog"
+        >
+            <div
+                data-section-content="blog"
+                aria-live="polite"
+            >
+                <p class="section-loading">
+                    Loading Blog…
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section
+            class="single-page-section"
+            id="contact"
+            data-nav-section="contact"
+        >
+            <div
+                data-section-content="contact"
+                aria-live="polite"
+            >
+                <p class="section-loading">
+                    Loading Contact…
+                </p>
+            </div>
+        </section>
+
+        <!-- Join Section -->
+        <section
+            class="single-page-section"
+            id="join"
+            data-nav-section="join"
+        >
+            <div
+                data-section-content="join"
+                aria-live="polite"
+            >
+                <p class="section-loading">
+                    Loading Join…
+                </p>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section
+            class="single-page-section"
+            id="faq"
+            data-nav-section="faq"
+        >
+            <div
+                data-section-content="faq"
+                aria-live="polite"
+            >
+                <p class="section-loading">
+                    Loading FAQ…
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="wrap">
+
+            <div class="footer__grid">
+
+                <!-- Footer Brand -->
+                <div>
+                    <a
+                        class="logo"
+                        href="#home"
+                        aria-label="Agentic AI Club home"
+                    >
+                        <svg
+                            class="logo__mark"
+                            viewBox="0 0 48 48"
+                            aria-hidden="true"
+                        >
+                            <rect
+                                class="logo__tile"
+                                width="48"
+                                height="48"
+                                rx="11"
+                                fill="#232a3b"
+                            ></rect>
+
+                            <path
+                                d="M15 14.5 24.5 24 15 33.5"
+                                fill="none"
+                                stroke="#fff"
+                                stroke-width="4.6"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></path>
+
+                            <rect
+                                x="26.5"
+                                y="30"
+                                width="10"
+                                height="4.6"
+                                rx="1.4"
+                                fill="#c62f3b"
+                            ></rect>
+                        </svg>
+
+                        <span class="logo__text">
+                            <span class="logo__name">
+                                Agentic AI Club
+                            </span>
+
+                            <span class="logo__sub">
+                                Roux Institute · Northeastern
+                            </span>
+                        </span>
+                    </a>
+
+                    <p class="footer__about">
+                        A student-led community exploring agentic AI
+                        through learning, experimentation and
+                        collaboration.
+                    </p>
+                </div>
+
+                <!-- Explore Links -->
+                <div>
+                    <h4>Explore</h4>
+
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+
+                <!-- Club Links -->
+                <div>
+                    <h4>Club</h4>
+
+                    <ul>
+                        <li><a href="#about">Mission</a></li>
+                        <li><a href="#about">Participation</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Links -->
+                <div>
+                    <h4>Connect</h4>
+
+                    <ul>
+                        <li><a href="#join">Get involved</a></li>
+                        <li><a href="#contact">Contact us</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer__bottom">
+                <span>
+                    © <span data-year></span> Agentic AI Club
+                </span>
+
+                <span>
+                    Roux Institute · Northeastern University
+                </span>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/section-loader.js"></script>
+    <script src="js/club.js"></script>
+</body>
+</html>
