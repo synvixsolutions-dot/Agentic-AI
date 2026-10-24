@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Contact Us | Agentic AI Club</title>
-    <meta name="description" content="Contact the Agentic AI Club.">
+
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/club.css">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
+
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
-<header class="topbar">
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+
+
+    <!-- =================================
+         NAVBAR
+    ================================== -->
+
+    <header class="topbar">
         <div class="wrap topbar__inner">
 
             <a class="logo" href="index.html" aria-label="Agentic AI Club home">
@@ -46,64 +60,282 @@
 
         </div>
     </header>
-<main id="main">
-    <section class="page-head">
-        <svg class="page-head__glyph" viewBox="0 0 200 200" aria-hidden="true">
-            <path d="M36 32 104 100 36 168" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <div class="wrap page-head__inner">
-            <div class="page-head__content">
-                <p class="kicker"><span class="kicker__prompt">&gt;_</span> Get in touch</p>
-                <h1>Contact Us<span class="cursor" aria-hidden="true"></span></h1>
-                <p class="lead">We'd love to hear from you.</p>
-            </div>
-        </div>
-    </section>
 
-    <section class="section">
-        <div class="wrap club-contact-layout">
-            <div class="club-contact-info">
-                <span class="label">Contact details</span>
-                <div class="club-info-item">
-                    <span class="club-info-icon">✉</span>
-                    <div><h3>Email</h3><p>agenticai@roux.edu</p></div>
+
+
+    <!-- =================================
+         MAIN
+    ================================== -->
+
+    <main id="main">
+
+
+        <!-- =================================
+             HERO
+        ================================== -->
+
+        <section class="page-head">
+            <svg class="page-head__glyph" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+                <path d="M36 32 104 100 36 168" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
+            <div class="wrap page-head__inner">
+                <div class="page-head__content">
+                    
+                    <h1>Contact Us<span class="cursor" aria-hidden="true"></span></h1>
+                    <p class="lead">We'd love to hear from you.</p>
                 </div>
-                <div class="club-info-item">
-                    <span class="club-info-icon">⌖</span>
-                    <div><h3>Location</h3><p>Roux Institute, USA</p></div>
-                </div>
-                <div class="club-info-item">
-                    <span class="club-info-icon">◎</span>
+            </div>
+        </section>
+
+
+
+        <!-- =================================
+             CONTACT CONTENT
+        ================================== -->
+
+        <section class="section container contact-layout">
+
+
+            <!-- =================================
+                 LEFT SIDE
+            ================================== -->
+
+            <div class="contact-info">
+
+
+                <!-- Email -->
+
+                <div class="info-item">
+
+                    <span class="info-icon">
+                        ✉
+                    </span>
+
                     <div>
-                        <h3>Social Media</h3>
-                        <div class="club-socials">
-                            <a href="#" aria-label="LinkedIn">in</a>
-                            <a href="#" aria-label="GitHub">GH</a>
-                            <a href="#" aria-label="X">X</a>
-                            <a href="#" aria-label="Instagram">◎</a>
-                        </div>
+
+                        <h3>
+                            Email
+                        </h3>
+
+                        <p>
+                            agenticai@roux.edu
+                        </p>
+
                     </div>
+
                 </div>
-                <div class="club-map-placeholder"><span>Map / Location</span></div>
+
+
+
+                <!-- Location -->
+
+                <div class="info-item">
+
+                    <span class="info-icon">
+                        ⌖
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Location
+                        </h3>
+
+                        <p>
+                            Roux Institute, USA
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Social Media -->
+
+                <div class="info-item">
+
+                    <span class="info-icon">
+                        ◎
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Social Media
+                        </h3>
+
+
+                        <div class="socials">
+
+                            <a
+                                href="https://www.linkedin.com/company/roux-agentic-ai-club/posts"
+                                aria-label="LinkedIn"
+                            >
+                                in
+                            </a>
+
+                            <a
+                                href="https://github.com/jcur-curtis123/AgenticAIClub"
+                                aria-label="GitHub"
+                            >
+                                GH
+                            </a>
+
+                            <!--<a
+                                href="#"
+                                aria-label="X"
+                            >
+                                X
+                            </a>
+
+                            <a
+                                href="#"
+                                aria-label="Instagram"
+                            >
+                                ◎
+                            </a>-->
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Map placeholder -->
+
+                <!-- Quick answers 
+            <div class="quick-faq">
+                <p class="label">Quick answers</p>
+                <ul>
+                    <li><a href="faq.html#faq-experience"><span class="quick-faq__prompt">&gt;_</span> Do I need previous AI experience?</a></li>
+                    <li><a href="faq.html#faq-who"><span class="quick-faq__prompt">&gt;_</span> Who can join the club?</a></li>
+                    <li><a href="faq.html#faq-projects"><span class="quick-faq__prompt">&gt;_</span> Where can I find the club's projects?</a></li>
+                    <li><a href="faq.html#faq-github"><span class="quick-faq__prompt">&gt;_</span> Does the club have a GitHub repository?</a></li>
+                </ul>
+            </div>-->
+
+            <div class="map-placeholder">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2927.699222636575!2d-70.24919982382276!3d43.661520571101725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb29dc905684571%3A0x6a962a679bfdc7c0!2sThe%20Roux%20Institute%20at%20Northeastern%20University!5e1!3m2!1sen!2sin!4v1792864010495!5m2!1sen!2sin" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
             </div>
 
-            <form class="club-contact-form" id="contactForm">
-                <span class="label">Send a message</span>
-                <label>Name
-                    <input type="text" name="name" placeholder="Enter your name" autocomplete="name" required>
-                </label>
-                <label>Email
-                    <input type="email" name="email" placeholder="Enter your email" autocomplete="email" required>
-                </label>
-                <label>Message
-                    <textarea name="message" rows="7" placeholder="Type your message" required></textarea>
-                </label>
-                <button type="submit" class="btn btn--primary">Send Message</button>
+            
+            </div>
+
+
+
+            <!-- =================================
+                 RIGHT SIDE - CONTACT FORM
+            ================================== -->
+
+            <div class="contact-card">
+
+            <form
+                class="contact-form"
+                id="contactForm"
+                novalidate
+                data-contact-form
+            >
+
+                <div class="field">
+                    <label class="field__label" for="contact-name">Name</label>
+                    <input
+                        class="input"
+                        id="contact-name"
+                        type="text"
+                        name="name"
+                        placeholder="Enter your name"
+                        autocomplete="name"
+                        aria-describedby="name-error"
+                    >
+                    <p class="error" id="name-error" aria-live="polite"></p>
+                </div>
+
+                <div class="field">
+                    <label class="field__label" for="contact-email">Email</label>
+                    <input
+                        class="input"
+                        id="contact-email"
+                        type="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        aria-describedby="email-error"
+                    >
+                    <p class="error" id="email-error" aria-live="polite"></p>
+                </div>
+
+                <fieldset class="field" data-group="topic" aria-describedby="topic-error">
+                    <legend class="field__label">What's this about?</legend>
+                    <div class="pill-group">
+                        <label class="pill"><input type="radio" name="topic" value="join"><span>Join the club</span></label>
+                        <label class="pill"><input type="radio" name="topic" value="collaborate"><span>Collaborate</span></label>
+                        <label class="pill"><input type="radio" name="topic" value="speak"><span>Speak at an event</span></label>
+                        <label class="pill"><input type="radio" name="topic" value="general"><span>Something else</span></label>
+                    </div>
+                    <p class="topic-hint" data-topic-hint aria-live="polite" hidden></p>
+                    <p class="error" id="topic-error" aria-live="polite"></p>
+                </fieldset>
+
+                <div class="field">
+                    <label class="field__label" for="contact-message">Message</label>
+                    <textarea
+                        class="input"
+                        id="contact-message"
+                        name="message"
+                        rows="7"
+                        maxlength="500"
+                        placeholder="Type your message"
+                        aria-describedby="message-error"
+                    ></textarea>
+                    <span class="counter" data-counter-for="message" aria-hidden="true"></span>
+                    <p class="error" id="message-error" aria-live="polite"></p>
+                </div>
+
+                <button
+                    type="submit"
+                    class="btn btn--primary full"
+                >
+                    Send Message <span class="btn__arrow" aria-hidden="true">→</span>
+                </button>
+
             </form>
-        </div>
-    </section>
-</main>
-<footer class="footer">
+
+            <div class="success contact-success" data-contact-success tabindex="-1" hidden>
+                <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                    <rect width="48" height="48" rx="11" fill="#151a26"/>
+                    <path d="M15 14.5 24.5 24 15 33.5" fill="none" stroke="#fff" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    <rect x="26.5" y="30" width="10" height="4.6" rx="1.4" fill="#c62f3b"/>
+                </svg>
+                <h2>Thanks, <span data-success-name></span>. Message received.</h2>
+                <p>
+                    <span data-success-topic></span>
+                    We'll reply to <strong data-success-email></strong> as soon as we can.
+                </p>
+                <div class="actions">
+                    <a class="btn btn--dark" href="faq.html">
+                        Browse the FAQ <span class="btn__arrow" aria-hidden="true">→</span>
+                    </a>
+                    <button class="link-btn" type="button" data-contact-reset>Send another message</button>
+                </div>
+            </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =================================
+         FOOTER
+    ==================================
+
+    <footer class="footer">
         <div class="wrap">
 
             <div class="footer__grid">
@@ -139,6 +371,7 @@
                     <ul>
                         <li><a href="join.html">Join the club</a></li>
                         <li><a href="blog.html">Blog &amp; newsletter</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -147,19 +380,25 @@
                     <h4>Follow</h4>
                     <ul>
                         <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">X</a></li>
                         <li><a href="#">GitHub</a></li>
-                        <li><a href="#">Instagram</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="footer__bottom">
-                <span>© <span data-year>2026</span> Agentic AI Club</span>
-                <span>Roux Institute at Northeastern University · Portland, Maine</span>
+                <span>© 2025 Agentic AI Club. All rights reserved.</span>
             </div>
 
         </div>
-    </footer>
-<script src="js/club.js"></script>
+    </footer>-->
+
+
+
+    <!-- JavaScript -->
+
+    <script src="js/main.js"></script>
+
 </body>
+
 </html>
