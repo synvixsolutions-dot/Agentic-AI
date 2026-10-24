@@ -1,191 +1,868 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agentic AI Club | Roux Institute</title>
-    <meta name="description" content="Agentic AI Club at the Roux Institute — a student community exploring, building and experimenting with agentic AI.">
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/club.css">
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Agentic AI Club | Roux Institute</title>
+<meta content="Agentic AI Club at the Roux Institute — a student community exploring, building and experimenting with agentic AI." name="description"/>
+<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="css/club.css" rel="stylesheet"/>
+<style>html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+#home, .single-page-section { scroll-margin-top: 88px; }
+.single-page-section > .page-head { scroll-margin-top: 88px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style></head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
-
 <header class="topbar">
-    <div class="wrap topbar__inner">
-        <a class="logo" href="index.html" aria-label="Agentic AI Club home">
-            <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true">
-                <rect class="logo__tile" width="48" height="48" rx="11" fill="#151a26"/>
-                <path d="M15 14.5 24.5 24 15 33.5" fill="none" stroke="#fff" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/>
-                <rect x="26.5" y="30" width="10" height="4.6" rx="1.4" fill="#c62f3b"/>
-            </svg>
-            <span class="logo__text">
-                <span class="logo__name">Agentic AI Club</span>
-                <span class="logo__sub">Roux Institute · Northeastern</span>
-            </span>
-        </a>
-
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-            <span class="sr-only">Menu</span>
-            <span class="nav-toggle__bar nav-toggle__bar--top"></span>
-            <span class="nav-toggle__bar nav-toggle__bar--bottom"></span>
-        </button>
-
-        <nav id="site-nav" class="nav" aria-label="Main">
-            <a href="index.html" aria-current="page">Home</a>
-            <a href="about.html">About</a>
-            <a href="events.html">Events</a>
-            <a href="projects.html">Projects</a>
-            <a href="blog.html">Blog</a>
-            <a href="join.html">Join</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </div>
+<div class="wrap topbar__inner">
+<a aria-label="Agentic AI Club home" class="logo" href="#home" aria-current="page" data-nav-link="home">
+<svg aria-hidden="true" class="logo__mark" viewbox="0 0 48 48">
+<rect class="logo__tile" fill="#151a26" height="48" rx="11" width="48"></rect>
+<path d="M15 14.5 24.5 24 15 33.5" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.6"></path>
+<rect fill="#c62f3b" height="4.6" rx="1.4" width="10" x="26.5" y="30"></rect>
+</svg>
+<span class="logo__text">
+<span class="logo__name">Agentic AI Club</span>
+<span class="logo__sub">Roux Institute · Northeastern</span>
+</span>
+</a>
+<button aria-controls="site-nav" aria-expanded="false" class="nav-toggle" type="button">
+<span class="sr-only">Menu</span>
+<span class="nav-toggle__bar nav-toggle__bar--top"></span>
+<span class="nav-toggle__bar nav-toggle__bar--bottom"></span>
+</button>
+<nav aria-label="Main" class="nav" id="site-nav">
+<a aria-current="page" href="#home">Home</a>
+<a href="#about" data-nav-link="about">About</a>
+<a href="#events" data-nav-link="events">Events</a>
+<a href="#projects" data-nav-link="projects">Projects</a>
+<a href="#blog" data-nav-link="blog">Blog</a>
+<a href="#join" data-nav-link="join">Join</a>
+<a href="#contact" data-nav-link="contact">Contact</a>
+</nav>
+</div>
 </header>
-
-<main id="main">
-    <section class="home-hero">
-        <div class="wrap">
-            <div class="home-hero__content">
-                <p class="home-hero__kicker">Agentic AI Club</p>
-                <h1>Building the next generation of <span class="accent">agentic AI</span> innovators.</h1>
-                <p class="home-hero__lead">
+<main id="main"><section class="home-hero" data-nav-section="home" id="home">
+<div class="wrap">
+<div class="home-hero__content">
+<p class="home-hero__kicker">Agentic AI Club</p>
+<h1>Building the next generation of <span class="accent">agentic AI</span> innovators.</h1>
+<p class="home-hero__lead">
                     A student-led community at the Roux Institute exploring agentic AI through learning, experimentation, collaboration, and real-world projects.
                 </p>
-                <div class="home-hero__actions">
-                    <a class="btn btn--primary" href="about.html">About the club <span class="btn__arrow" aria-hidden="true">→</span></a>
-                </div>
-                <div class="home-hero__meta">
-                    <span>Learn</span>
-                    <span>Build</span>
-                    <span>Collaborate</span>
-                    <span>Innovate</span>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="home-hero__actions">
+<a class="btn btn--primary" href="#about">About the club <span aria-hidden="true" class="btn__arrow">→</span></a>
+</div>
+<div class="home-hero__meta">
+<span>Learn</span>
+<span>Build</span>
+<span>Collaborate</span>
+<span>Innovate</span>
+</div>
+</div>
+</div>
+</section><section class="single-page-section" data-nav-section="about" id="about">
+<section class="page-head">
+<svg aria-hidden="true" class="page-head__glyph" viewbox="0 0 200 200">
+<path d="M36 32 104 100 36 168" fill="none" stroke="rgba(255,255,255,0.06)" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></path>
+</svg>
+<div class="wrap page-head__inner">
+<div class="page-head__content">
+<p class="kicker"><span class="kicker__prompt">&gt;_</span> about</p>
+<h1>About the Agentic AI Club<span aria-hidden="true" class="cursor"></span></h1>
+<p class="lead">A student-led community for exploring, experimenting with and building practical systems around agentic AI.</p>
+</div>
+<ul class="facts">
+<li>Roux Institute, Portland</li>
+<li>Open to students</li>
+<li>Curiosity welcome</li>
+</ul>
+</div>
+</section>
+<section class="about-intro">
+<div class="wrap">
+<span class="label">01 · Who we are</span>
+<div class="home-rule"></div>
+<div class="about-intro__grid" style="margin-top: 44px;">
+<h2 class="about-intro__title">A place to explore what comes after chat.</h2>
+<div class="about-intro__copy">
+<p>The Agentic AI Club brings students together around a rapidly changing area of artificial intelligence: systems that can reason through tasks, use tools, interact with their environment and work toward goals.</p>
+<p>The club is a space for students to learn from each other, test ideas, share experiments and build practical projects. Participation can range from attending a discussion to contributing to a hands-on project.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="about-block about-block--warm" id="participation">
+<div class="wrap">
+<div class="about-block__grid">
+<div>
+<span class="label">02 · Participation</span>
+<h2>Learn by taking part.</h2>
+</div>
+<div class="about-block__content">
+<p>The club is designed around active participation rather than passive learning. Students can bring questions, ideas, technical skills or simply curiosity.</p>
+<ul class="about-list">
+<li><span class="about-list__number">01</span><div><h3>Explore</h3><p>Discuss new agent architectures, tools, research and practical use cases.</p></div></li>
+<li><span class="about-list__number">02</span><div><h3>Experiment</h3><p>Try ideas through workshops, small prototypes and technical sessions.</p></div></li>
+<li><span class="about-list__number">03</span><div><h3>Build</h3><p>Collaborate on projects that turn concepts into working systems.</p></div></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="about-block">
+<div class="wrap">
+<div class="about-block__grid">
+<div>
+<span class="label">03 · Our focus</span>
+<h2>From ideas to useful systems.</h2>
+</div>
+<div class="about-block__content">
+<p>We are interested in the practical side of agentic AI: how agents are designed, how they use tools, how multiple steps can be coordinated, and where these systems can create meaningful value.</p>
+<p>Our focus can evolve with the community. As students bring new interests and projects, the club can become a place to explore the questions that matter most to them.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="cta-band">
+<div class="wrap cta-band__inner">
+<div>
+<h2>Curious about agentic AI?</h2>
+<p>Start by exploring what the club is working on and find a way to participate.</p>
+</div>
+<a class="btn btn--dark" href="#home">Back to home <span aria-hidden="true" class="btn__arrow">→</span></a>
+</div>
+</section>
+</section><section class="single-page-section" data-nav-section="events" id="events">
+<!-- ========================================
+             PAGE HEADER
+        ======================================== -->
+<section class="page-head">
+<svg aria-hidden="true" class="page-head__glyph" focusable="false" viewbox="0 0 200 200">
+<path d="M36 32 104 100 36 168" fill="none" stroke="rgba(255,255,255,0.06)" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></path>
+</svg>
+<div class="wrap page-head__inner">
+<div class="page-head__content">
+<p class="kicker"><span class="kicker__prompt">&gt;_</span> events</p>
+<h1>Events &amp; Activities<span aria-hidden="true" class="cursor"></span></h1>
+<p class="lead">
+                        Meetups, workshops and talks for students curious about AI agents.
+                        We're a new club, so the calendar is short for now. More events will be
+                        added here as they're scheduled.
+                    </p>
+</div>
+<ul class="facts">
+<li>Hosted at the Roux Institute, Portland</li>
+<li>Open to all students</li>
+<li>No experience needed</li>
+</ul>
+</div>
+</section>
+<!-- ========================================
+             NEXT EVENT
+        ======================================== -->
+<section aria-labelledby="next-title" class="section">
+<div class="wrap">
+<span class="label">Next event</span>
+<article class="feature" data-end="2026-10-17T12:00:00-04:00" data-location="Room 201, Roux Institute, 100 Fore St, Portland, ME" data-start="2026-10-17T10:00:00-04:00">
+<div class="feature__date">
+<div>
+<p class="feature__month">October</p>
+<p class="feature__days">17</p>
+</div>
+<p class="feature__year">Saturday · 2026</p>
+</div>
+<div class="feature__body">
+<p class="event__type">Meetup</p>
+<h2 data-ev-title="" id="next-title">Coffee and Agents</h2>
+<p class="feature__desc" data-ev-desc="">
+                            A relaxed morning to kick off the club. Grab a coffee, meet other students
+                            who are interested in AI agents, and hear what we have planned for the year.
+                            No experience needed, just curiosity.
+                        </p>
+<dl class="details">
+<div>
+<dt>When</dt>
+<dd>Sat, Oct 17 · 10 AM – 12 PM</dd>
+</div>
+<div>
+<dt>Where</dt>
+<dd>Room 201, Roux Institute</dd>
+</div>
+</dl>
+<div class="actions">
+<button class="btn btn--primary" data-ics="" type="button">
+                                Add to calendar <span aria-hidden="true" class="btn__arrow">→</span>
+</button>
+<a class="text-link" href="#contact">Questions? Get in touch</a>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- ========================================
+             UPCOMING EVENTS
+             Uncomment this section once there is more than one event.
+             Copy one <article class="event"> per event. data-type must match
+             a filter button; data-start / data-end use ISO time with the
+             Eastern offset (-04:00 until early Nov, -05:00 after).
+             Events hide themselves automatically once data-end has passed.
+        ======================================== -->
+<!--
+        <section class="section section--flush-top" aria-labelledby="upcoming-title">
+            <div class="wrap">
 
-    <section class="home-section" aria-labelledby="about-preview-title">
-        <div class="wrap">
-            <span class="label">01 · About the club</span>
-            <div class="home-rule"></div>
-            <div class="editorial-grid" style="margin-top: 44px;">
-                <h2 id="about-preview-title" class="editorial-grid__statement">A student community built around the future of AI.</h2>
-                <div class="editorial-grid__copy">
-                    <p>The Agentic AI Club brings Roux Institute students together to explore what happens when AI systems can reason, plan, use tools, and take action.</p>
-                    <p>We create opportunities for students to learn from one another, experiment with emerging technologies, and collaborate on projects that turn ideas into working systems.</p>
-                    <a class="editorial-link" href="about.html">Explore the club <span aria-hidden="true">→</span></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="home-section home-section--warm" aria-labelledby="what-title">
-        <div class="wrap">
-            <span class="label">02 · What we do</span>
-            <div class="home-rule"></div>
-            <div class="section-head" style="margin-top: 28px; margin-bottom: 32px;">
-                <div>
-                    <h2 id="what-title">Learn, build, collaborate and innovate.</h2>
-                </div>
-            </div>
-            <div class="project-strip">
-                <article class="project-strip__item">
-                    <span class="project-strip__number">01</span>
-                    <div class="project-strip__body">
-                        <h3>Learn</h3>
-                        <p>Explore agentic AI concepts, tools, patterns and emerging research.</p>
+                <div class="section-head">
+                    <div>
+                        <h2 id="upcoming-title">Upcoming</h2>
+                        <p>Times are Eastern.</p>
                     </div>
-                </article>
-                <article class="project-strip__item">
-                    <span class="project-strip__number">02</span>
-                    <div class="project-strip__body">
-                        <h3>Build</h3>
-                        <p>Turn ideas into working prototypes, experiments and practical projects.</p>
+
+                    <div class="tabs" role="group" aria-label="Filter events by type">
+                        <button class="tab" type="button" data-event-filter="all" aria-pressed="true">All</button>
+                        <button class="tab" type="button" data-event-filter="meetup" aria-pressed="false">Meetups</button>
+                        <button class="tab" type="button" data-event-filter="workshop" aria-pressed="false">Workshops</button>
+                        <button class="tab" type="button" data-event-filter="talk" aria-pressed="false">Talks</button>
                     </div>
-                </article>
-                <article class="project-strip__item">
-                    <span class="project-strip__number">03</span>
-                    <div class="project-strip__body">
-                        <h3>Collaborate</h3>
-                        <p>Meet peers, share knowledge and work together across disciplines.</p>
+                </div>
+
+                <div class="events" data-event-list>
+
+                    <article class="event" data-type="workshop"
+                        data-start="2026-11-05T18:00:00-05:00"
+                        data-end="2026-11-05T20:00:00-05:00"
+                        data-location="Room 201, Roux Institute, 100 Fore St, Portland, ME">
+                        <p class="event__date">
+                            <span class="event__month">Nov</span>
+                            <span class="event__day">05</span>
+                            <span class="event__weekday">Thursday</span>
+                        </p>
+                        <div>
+                            <p class="event__type">Workshop</p>
+                            <h3 class="event__title" data-ev-title>Event title</h3>
+                            <p class="event__desc" data-ev-desc>One or two sentences about the event.</p>
+                            <p class="meta"><span>6:00–8:00 PM</span><span>Room 201, Roux Institute</span></p>
+                        </div>
+                        <div class="event__actions">
+                            <a class="btn btn--outline btn--sm" href="#">RSVP</a>
+                            <button class="link-btn" type="button" data-ics>Add to calendar</button>
+                        </div>
+                    </article>
+
+                    <p class="empty" data-event-empty hidden>
+                        Nothing scheduled in this category yet.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+        -->
+<!-- ========================================
+             MORE COMING
+        ======================================== -->
+<section class="section section--warm">
+<div class="wrap cta">
+<div>
+<h2>More events on the way</h2>
+<p>
+                        We're planning workshops, talks and hands-on sessions for the months ahead.
+                        Join the club to hear about them first, or tell us what you'd like to see.
+                    </p>
+</div>
+<div class="actions">
+<a class="btn btn--dark" href="#join">
+                        Join the club <span aria-hidden="true" class="btn__arrow">→</span>
+</a>
+<a class="btn btn--outline" href="#contact">Suggest an event</a>
+</div>
+</div>
+</section>
+</section><section class="single-page-section" data-nav-section="projects" id="projects">
+<!-- ========================================
+             PAGE HEADER
+        ======================================== -->
+<section class="page-head">
+<svg aria-hidden="true" class="page-head__glyph" focusable="false" viewbox="0 0 200 200">
+<path d="M36 32 104 100 36 168" fill="none" stroke="rgba(255,255,255,0.06)" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></path>
+</svg>
+<div class="wrap page-head__inner">
+<div class="page-head__content">
+<p class="kicker"><span class="kicker__prompt">&gt;_</span> projects</p>
+<h1>Our Projects<span aria-hidden="true" class="cursor"></span></h1>
+<p class="lead">
+                        This is where club projects will live. We're just getting started, so there's
+                        nothing to show yet. The first project teams will form as the club gets going.
+                    </p>
+</div>
+<ul class="facts">
+<li>Built by student teams</li>
+<li>Any member can pitch an idea</li>
+<li>First projects coming soon</li>
+</ul>
+</div>
+</section>
+<!-- ========================================
+             COMING SOON
+        ======================================== -->
+<section aria-labelledby="soon-title" class="section">
+<div class="wrap spotlight">
+<div>
+<span class="label">Coming soon</span>
+<h2 id="soon-title">No projects yet. That's where you come in.</h2>
+<p class="spotlight__desc">
+                        Club projects will be built by small teams of members, from quick experiments to
+                        tools other students can actually use. Once the first ones are underway, you'll
+                        find them here: what they do, who's building them and where to see the code.
+                    </p>
+<a class="text-link" href="#events">Meet the club at our first event</a>
+</div>
+<figure aria-label="Terminal showing an empty projects folder" class="terminal">
+<div aria-hidden="true" class="terminal__bar">
+<span></span><span></span><span></span>
+<p class="terminal__title">agentic-ai-club — zsh</p>
+</div>
+<pre class="terminal__body"><span class="t-prompt">$</span> <span class="t-strong">ls projects/</span>
+<span class="t-dim">total 0</span>
+
+<span class="t-prompt">$</span> <span class="t-strong">club new-project --idea "yours"</span>
+<span class="t-dim">› </span>looking for teammates...
+<span class="t-dim">› </span>waiting for the first pitch
+
+<span class="t-prompt">$</span> <span class="t-cursor"></span></pre>
+</figure>
+</div>
+</section>
+<!-- ========================================
+             ALL PROJECTS
+             Uncomment this section once the first projects exist.
+             Copy one <article class="project"> per project.
+             data-status: "in-progress" or "shipped".
+             data-open: "true" if the team wants contributors.
+        ======================================== -->
+<!--
+        <section class="section section--warm" aria-labelledby="all-title">
+            <div class="wrap">
+
+                <div class="section-head">
+                    <div>
+                        <h2 id="all-title">All projects</h2>
+                        <p>Filter by status, or search by name, tool or language.</p>
                     </div>
-                </article>
-            </div>
-        </div>
-    </section>
+                </div>
 
-    <section class="home-section" aria-labelledby="events-title">
-        <div class="wrap">
-            <span class="label">03 · Events</span>
-            <div class="home-rule"></div>
-            <div class="section-head" style="margin-top: 28px;">
-                <div><h2 id="events-title">Upcoming events</h2></div>
-            </div>
-            <div class="home-events">
-                <article class="home-event">
-                    <div class="home-event__date"><span class="home-event__day">17</span><span class="home-event__month">OCT</span></div>
-                    <div><span class="home-event__type">Meetup</span><h3>Coffee and Agents</h3><p>A relaxed morning to meet students interested in AI agents and hear what the club has planned.</p></div>
-                    <span class="home-event__arrow" aria-hidden="true">→</span>
-                </article>
-                <article class="home-event">
-                    <div class="home-event__date"><span class="home-event__day">—</span><span class="home-event__month">TBA</span></div>
-                    <div><span class="home-event__type">Workshop</span><h3>Building Your First AI Agent</h3><p>A hands-on session exploring the fundamentals of agentic AI and practical workflows.</p></div>
-                    <span class="home-event__arrow" aria-hidden="true">→</span>
-                </article>
-            </div>
-        </div>
-    </section>
+                <div class="toolbar">
+                    <div class="tabs" role="group" aria-label="Filter projects by status">
+                        <button class="tab" type="button" data-project-filter="all" aria-pressed="true">All</button>
+                        <button class="tab" type="button" data-project-filter="in-progress" aria-pressed="false">In progress</button>
+                        <button class="tab" type="button" data-project-filter="shipped" aria-pressed="false">Shipped</button>
+                        <button class="tab" type="button" data-project-filter="open" aria-pressed="false">Open to contributors</button>
+                    </div>
 
-    <section class="home-section" aria-labelledby="projects-title">
-        <div class="wrap">
-            <span class="label">04 · Projects</span>
-            <div class="home-rule"></div>
-            <div class="section-head" style="margin-top: 28px;">
-                
-            </div>
-            <div class="project-strip">
-                <article class="project-strip__item"><span class="project-strip__number">PROJECT 01</span><div class="project-strip__body"><h3>Agentic Research</h3><p>Exploring retrieval, tools and multi-step reasoning through student experiments.</p></div></article>
-                <article class="project-strip__item"><span class="project-strip__number">PROJECT 02</span><div class="project-strip__body"><h3>Autonomous Workflows</h3><p>Prototyping agents that coordinate tasks across tools and real-world workflows.</p></div></article>
-                <article class="project-strip__item"><span class="project-strip__number">PROJECT 03</span><div class="project-strip__body"><h3>Applied AI</h3><p>Student-led ideas turning agentic AI concepts into useful applications.</p></div></article>
-            </div>
-        </div>
-    </section>
+                    <label class="search">
+                        <span class="sr-only">Search projects</span>
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+                            <circle cx="7" cy="7" r="4.75"/>
+                            <path d="m10.5 10.5 3.5 3.5"/>
+                        </svg>
+                        <input type="search" placeholder="Search projects" data-project-search>
+                    </label>
+                </div>
 
-    <section class="cta-band">
-        <div class="wrap cta-band__inner">
-            <div>
-                <h2>Interested in building with us?</h2>
-                <p>Learn more about the club, what we are exploring and how students can get involved.</p>
-            </div>
-            <a class="btn btn--dark" href="about.html">Learn about the club <span class="btn__arrow" aria-hidden="true">→</span></a>
-        </div>
-    </section>
-</main>
+                <p class="result-count" data-project-count aria-live="polite"></p>
 
+                <div class="project-grid" data-project-grid>
+
+                    <article class="project" data-status="in-progress" data-open="true">
+                        <div class="project__top">
+                            <div class="project__badges">
+                                <span class="status status--progress">In progress</span>
+                                <span class="tag-open">Contributors wanted</span>
+                            </div>
+                            <span class="project__term">Spring 2027</span>
+                        </div>
+                        <h3>Project name</h3>
+                        <p class="project__desc">One or two sentences about what it does and who it's for.</p>
+                        <ul class="chips" aria-label="Tech stack">
+                            <li>Python</li><li>Tool</li>
+                        </ul>
+                        <div class="project__foot">
+                            <div class="team">
+                                <div class="avatars" aria-hidden="true"><span>AB</span><span>CD</span></div>
+                                2 members
+                            </div>
+                            <a class="project__link" href="#">GitHub →</a>
+                        </div>
+                    </article>
+
+                </div>
+
+                <p class="empty" data-project-empty hidden>No projects match that search.</p>
+
+            </div>
+        </section>
+        -->
+<!-- ========================================
+             HOW PROJECTS WILL WORK
+        ======================================== -->
+<section aria-labelledby="process-title" class="section section--warm">
+<div class="wrap">
+<div class="section-head">
+<div>
+<h2 id="process-title">How club projects will work</h2>
+<p>A simple path from idea to something you can show people.</p>
+</div>
+</div>
+<ol class="steps">
+<li class="step">
+<span class="step__num">01</span>
+<h3>Pitch an idea</h3>
+<p>Any member can pitch. A short description of the problem and a rough plan is enough to start.</p>
+</li>
+<li class="step">
+<span class="step__num">02</span>
+<h3>Form a team</h3>
+<p>Ideas that find a few interested members become club projects.</p>
+</li>
+<li class="step">
+<span class="step__num">03</span>
+<h3>Build together</h3>
+<p>Teams meet regularly, share progress with the club and get help when they're stuck.</p>
+</li>
+<li class="step">
+<span class="step__num">04</span>
+<h3>Show it off</h3>
+<p>Finished projects are demoed to the club and featured on this page.</p>
+</li>
+</ol>
+</div>
+</section>
+<!-- ========================================
+             CALL TO ACTION
+        ======================================== -->
+<section class="section">
+<div class="wrap cta">
+<div>
+<h2>Have an idea worth building?</h2>
+<p>
+                        Tell us about it. Rough ideas are welcome, and we'll help you find people to
+                        build it with.
+                    </p>
+</div>
+<div class="actions">
+<a class="btn btn--dark" href="#contact">
+                        Pitch an idea <span aria-hidden="true" class="btn__arrow">→</span>
+</a>
+<a class="btn btn--outline" href="#join">Join the club</a>
+</div>
+</div>
+</section>
+</section><section class="single-page-section" data-nav-section="blog" id="blog">
+<section class="page-head">
+<svg aria-hidden="true" class="page-head__glyph" viewbox="0 0 200 200">
+<path d="M36 32 104 100 36 168" fill="none" stroke="rgba(255,255,255,0.06)" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></path>
+</svg>
+<div class="wrap page-head__inner">
+<div class="page-head__content">
+<p class="kicker"><span class="kicker__prompt">&gt;_</span> Insights • Updates • Stories</p>
+<h1>Blog &amp; Newsletter<span aria-hidden="true" class="cursor"></span></h1>
+<p class="lead">Insights, updates and stories from the club.</p>
+</div>
+</div>
+</section>
+<section class="section blog-club-section">
+<div class="wrap">
+<div aria-label="Blog categories" class="club-filter-row">
+<button class="club-filter active" data-filter="all">All</button>
+<button class="club-filter" data-filter="news">News</button>
+<button class="club-filter" data-filter="articles">Articles</button>
+<button class="club-filter" data-filter="events">Events</button>
+<button class="club-filter" data-filter="resources">Resources</button>
+</div>
+<div class="club-post-grid">
+<article class="club-post-card" data-category="articles">
+<div class="club-post-image"><span>AI</span></div>
+<div class="club-post-content">
+<span class="label">Articles | 5 min read</span>
+<h3>The Future of Agentic AI</h3>
+<a class="editorial-link" href="#">Read More <span>→</span></a>
+</div>
+</article>
+<article class="club-post-card" data-category="articles">
+<div class="club-post-image"><span>AI</span></div>
+<div class="club-post-content">
+<span class="label">Articles | 7 min read</span>
+<h3>Building Your First AI Agent</h3>
+<a class="editorial-link" href="#">Read More <span>→</span></a>
+</div>
+</article>
+<article class="club-post-card" data-category="resources">
+<div class="club-post-image"><span>AI</span></div>
+<div class="club-post-content">
+<span class="label">Resources | 6 min read</span>
+<h3>Top Tools for AI Development</h3>
+<a class="editorial-link" href="#">Read More <span>→</span></a>
+</div>
+</article>
+<article class="club-post-card" data-category="events">
+<div class="club-post-image"><span>AI</span></div>
+<div class="club-post-content">
+<span class="label">Events | 4 min read</span>
+<h3>Event Highlights: Hackathon 2025</h3>
+<a class="editorial-link" href="#">Read More <span>→</span></a>
+</div>
+</article>
+</div>
+<p class="club-empty-state" hidden="">No posts found in this category.</p>
+</div>
+</section>
+<section class="cta-band">
+<div class="wrap club-newsletter">
+<div>
+<span class="label club-newsletter__label">Newsletter</span>
+<h2>Subscribe to our Newsletter</h2>
+<p>Get the latest updates, events and resources.</p>
+</div>
+<form class="club-newsletter-form" novalidate="">
+<label class="sr-only" for="newsletter-email">Email address</label>
+<input autocomplete="email" id="newsletter-email" placeholder="Enter your email" required="" type="email"/>
+<button class="btn btn--dark" type="submit">Subscribe</button>
+</form>
+</div>
+</section>
+</section><section class="single-page-section" data-nav-section="join" id="join">
+<!-- ========================================
+             PAGE HEADER
+        ======================================== -->
+<section class="page-head">
+<svg aria-hidden="true" class="page-head__glyph" focusable="false" viewbox="0 0 200 200">
+<path d="M36 32 104 100 36 168" fill="none" stroke="rgba(255,255,255,0.06)" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></path>
+</svg>
+<div class="wrap page-head__inner">
+<div class="page-head__content">
+<p class="kicker"><span class="kicker__prompt">&gt;_</span> join</p>
+<h1>Join the Club<span aria-hidden="true" class="cursor"></span></h1>
+<p class="lead">
+                        Membership is free and open to every Roux Institute student, whatever your program
+                        or background. If you're curious about AI agents, you'll fit in.
+                    </p>
+</div>
+<ul class="facts">
+<li>Free, no dues</li>
+<li>No experience required</li>
+<li>Sign-up takes about 3 minutes</li>
+</ul>
+</div>
+</section>
+<!-- ========================================
+             WHY JOIN
+        ======================================== -->
+<section aria-labelledby="why-title" class="section">
+<div class="wrap">
+<div class="section-head">
+<div>
+<h2 id="why-title">What you get as a member</h2>
+<p>Show up as often as you like. Here's what's waiting when you do.</p>
+</div>
+</div>
+<ol class="steps">
+<li class="step">
+<span class="step__num">01</span>
+<h3>Build real things</h3>
+<p>Work on projects that ship, with teammates who care about getting them right.</p>
+</li>
+<li class="step">
+<span class="step__num">02</span>
+<h3>Learn from practitioners</h3>
+<p>Workshops and talks on how agents are designed, built and tested in practice.</p>
+</li>
+<li class="step">
+<span class="step__num">03</span>
+<h3>Find teammates</h3>
+<p>Meet students across programs and find people for class projects, hackathons and co-ops.</p>
+</li>
+<li class="step">
+<span class="step__num">04</span>
+<h3>Show your work</h3>
+<p>Club projects give you something concrete to point to on your résumé and in interviews.</p>
+</li>
+</ol>
+</div>
+</section>
+<!-- ========================================
+             SIGN-UP FORM
+        ======================================== -->
+<section aria-labelledby="form-title" class="section section--warm" id="apply">
+<div class="wrap apply">
+<div class="form-card">
+<form data-join-form="" novalidate="">
+<h2 id="form-title">Membership sign-up</h2>
+<p class="form-card__intro">Fields marked optional can be skipped. Everything else helps us place you in the right sessions.</p>
+<div class="form-grid">
+<div class="field">
+<label class="field__label" for="firstName">First name</label>
+<input aria-describedby="firstName-error" autocomplete="given-name" class="input" id="firstName" name="firstName" type="text"/>
+<p aria-live="polite" class="error" id="firstName-error"></p>
+</div>
+<div class="field">
+<label class="field__label" for="lastName">Last name</label>
+<input aria-describedby="lastName-error" autocomplete="family-name" class="input" id="lastName" name="lastName" type="text"/>
+<p aria-live="polite" class="error" id="lastName-error"></p>
+</div>
+<div class="field field--full">
+<label class="field__label" for="email">Email</label>
+<input aria-describedby="email-hint email-error" autocomplete="email" class="input" id="email" inputmode="email" name="email" type="email"/>
+<p class="hint" id="email-hint">Your Northeastern email works best.</p>
+<p aria-live="polite" class="error" id="email-error"></p>
+</div>
+<div class="field">
+<label class="field__label" for="program">Program</label>
+<select aria-describedby="program-error" class="input" id="program" name="program">
+<option value="">Select your program</option>
+<option>MS in Computer Science</option>
+<option>MS in Data Science</option>
+<option>MS in Artificial Intelligence</option>
+<option>MS in Information Systems</option>
+<option>MPS in Analytics</option>
+<option>Other</option>
+</select>
+<p aria-live="polite" class="error" id="program-error"></p>
+</div>
+<div class="field">
+<label class="field__label" for="graduation">Expected graduation <span class="optional">(optional)</span></label>
+<select class="input" id="graduation" name="graduation">
+<option value="">Select a term</option>
+<option>Spring 2027</option>
+<option>Fall 2027</option>
+<option>Spring 2028</option>
+<option>Fall 2028</option>
+<option>Later</option>
+</select>
+</div>
+<fieldset aria-describedby="experience-error" class="field field--full" data-group="experience">
+<legend class="field__label">Experience with AI</legend>
+<div class="choice-grid">
+<label class="choice">
+<input name="experience" type="radio" value="new"/>
+<span><strong>Just starting</strong><small>Curious, not much hands-on yet</small></span>
+</label>
+<label class="choice">
+<input name="experience" type="radio" value="some"/>
+<span><strong>Some experience</strong><small>Courses or a few ML projects</small></span>
+</label>
+<label class="choice">
+<input name="experience" type="radio" value="builder"/>
+<span><strong>I've built agents</strong><small>Happy to help others too</small></span>
+</label>
+</div>
+<p aria-live="polite" class="error" id="experience-error"></p>
+</fieldset>
+<fieldset aria-describedby="interests-error" class="field field--full" data-group="interests">
+<legend class="field__label">What are you interested in?</legend>
+<div class="pill-group">
+<label class="pill"><input name="interests" type="checkbox" value="workshops"/><span>Workshops</span></label>
+<label class="pill"><input name="interests" type="checkbox" value="projects"/><span>Building projects</span></label>
+<label class="pill"><input name="interests" type="checkbox" value="hackathons"/><span>Hackathons</span></label>
+<label class="pill"><input name="interests" type="checkbox" value="paper-club"/><span>Research papers</span></label>
+<label class="pill"><input name="interests" type="checkbox" value="talks"/><span>Speaker talks</span></label>
+<label class="pill"><input name="interests" type="checkbox" value="organizing"/><span>Helping organize</span></label>
+</div>
+<p aria-live="polite" class="error" id="interests-error"></p>
+</fieldset>
+<div class="field field--full">
+<label class="field__label" for="goals">Anything you'd like to build or learn? <span class="optional">(optional)</span></label>
+<textarea class="input" id="goals" maxlength="500" name="goals" rows="4"></textarea>
+<span aria-hidden="true" class="counter" data-counter-for="goals"></span>
+</div>
+<div class="field field--full">
+<label class="check">
+<input name="newsletter" type="checkbox" value="yes"/>
+                                    Send me the club newsletter.
+                                </label>
+</div>
+</div>
+<div class="form-foot">
+<small>We only use your details to run the club. We never share them.</small>
+<button class="btn btn--primary" type="submit">
+                                Submit sign-up <span aria-hidden="true" class="btn__arrow">→</span>
+</button>
+</div>
+</form>
+<div class="success" data-join-success="" hidden="" tabindex="-1">
+<svg aria-hidden="true" class="logo__mark" focusable="false" viewbox="0 0 48 48">
+<rect fill="#151a26" height="48" rx="11" width="48"></rect>
+<path d="M15 14.5 24.5 24 15 33.5" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.6"></path>
+<rect fill="#c62f3b" height="4.6" rx="1.4" width="10" x="26.5" y="30"></rect>
+</svg>
+<h2>Thanks, <span data-success-name=""></span>. You're on the list.</h2>
+<p>
+                            We'll email <strong data-success-email=""></strong> with next steps. Our first
+                            event is Coffee and Agents on Saturday, Oct 17. We'd love to see you there.
+                        </p>
+<div class="actions">
+<a class="btn btn--dark" href="#events">
+                                See upcoming events <span aria-hidden="true" class="btn__arrow">→</span>
+</a>
+<a class="text-link" href="#projects">Browse projects</a>
+</div>
+</div>
+</div>
+<aside aria-label="After you sign up" class="aside">
+<div class="aside-card">
+<h3>What happens next</h3>
+<ol class="timeline">
+<li>
+<span class="timeline__num">01</span>
+<strong>We read every sign-up</strong>
+<p>A club organizer will get back to you by email.</p>
+</li>
+<li>
+<span class="timeline__num">02</span>
+<strong>Welcome email</strong>
+<p>How to stay in touch and what's coming up next.</p>
+</li>
+<li>
+<span class="timeline__num">03</span>
+<strong>Come to an event</strong>
+<p>Our first is Coffee and Agents, Sat, Oct 17, 10 AM in Room 201.</p>
+</li>
+</ol>
+</div>
+<div class="aside-note">
+                        Questions before signing up?
+                        <a class="text-link" href="#contact">Get in touch</a>
+                        and one of the organizers will reply.
+                    </div>
+</aside>
+</div>
+</section>
+<!-- ========================================
+             FAQ
+        ======================================== -->
+<section aria-labelledby="faq-title" class="section">
+<div class="wrap faq-layout">
+<div>
+<h2 id="faq-title">Common questions</h2>
+<p>Can't find what you need? <a class="text-link" href="#contact">Ask us directly</a>.</p>
+</div>
+<div class="faq">
+<details>
+<summary>Do I need AI or coding experience?</summary>
+<p class="faq__answer">
+                            No. The club is for anyone curious about AI agents, whether you've built
+                            one before or are just getting started. Events are designed so you can
+                            follow along from scratch.
+                        </p>
+</details>
+<details>
+<summary>Is there a membership fee?</summary>
+<p class="faq__answer">
+                            No. Membership and events are free.
+                        </p>
+</details>
+<details>
+<summary>How much time does it take?</summary>
+<p class="faq__answer">
+                            As much as you want to give it. Come to the events that interest you, and
+                            join a project team if and when you want to go deeper.
+                        </p>
+</details>
+<details>
+<summary>Can students from other Northeastern campuses join?</summary>
+<p class="faq__answer">
+                            Yes. Events are held at the Roux Institute in Portland, but anyone from
+                            Northeastern is welcome to sign up and get involved.
+                        </p>
+</details>
+<details>
+<summary>Can I join partway through the semester?</summary>
+<p class="faq__answer">
+                            Any time. Sign up whenever you're ready and come to the next event.
+                        </p>
+</details>
+</div>
+</div>
+</section>
+</section><section class="single-page-section" data-nav-section="contact" id="contact">
+<section class="page-head">
+<svg aria-hidden="true" class="page-head__glyph" viewbox="0 0 200 200">
+<path d="M36 32 104 100 36 168" fill="none" stroke="rgba(255,255,255,0.06)" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></path>
+</svg>
+<div class="wrap page-head__inner">
+<div class="page-head__content">
+<p class="kicker"><span class="kicker__prompt">&gt;_</span> Get in touch</p>
+<h1>Contact Us<span aria-hidden="true" class="cursor"></span></h1>
+<p class="lead">We'd love to hear from you.</p>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="wrap club-contact-layout">
+<div class="club-contact-info">
+<span class="label">Contact details</span>
+<div class="club-info-item">
+<span class="club-info-icon">✉</span>
+<div><h3>Email</h3><p>agenticai@roux.edu</p></div>
+</div>
+<div class="club-info-item">
+<span class="club-info-icon">⌖</span>
+<div><h3>Location</h3><p>Roux Institute, USA</p></div>
+</div>
+<div class="club-info-item">
+<span class="club-info-icon">◎</span>
+<div>
+<h3>Social Media</h3>
+<div class="club-socials">
+<a aria-label="LinkedIn" href="#">in</a>
+<a aria-label="GitHub" href="#">GH</a>
+<a aria-label="X" href="#">X</a>
+<a aria-label="Instagram" href="#">◎</a>
+</div>
+</div>
+</div>
+<div class="club-map-placeholder"><span>Map / Location</span></div>
+</div>
+<form class="club-contact-form" id="contactForm">
+<span class="label">Send a message</span>
+<label>Name
+                    <input autocomplete="name" name="name" placeholder="Enter your name" required="" type="text"/>
+</label>
+<label>Email
+                    <input autocomplete="email" name="email" placeholder="Enter your email" required="" type="email"/>
+</label>
+<label>Message
+                    <textarea name="message" placeholder="Type your message" required="" rows="7"></textarea>
+</label>
+<button class="btn btn--primary" type="submit">Send Message</button>
+</form>
+</div>
+</section>
+</section></main>
 <footer class="footer">
-    <div class="wrap">
-        <div class="footer__grid">
-            <div>
-                <a class="logo" href="index.html" aria-label="Agentic AI Club home">
-                    <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true">
-                        <rect class="logo__tile" width="48" height="48" rx="11" fill="#232a3b"/>
-                        <path d="M15 14.5 24.5 24 15 33.5" fill="none" stroke="#fff" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/>
-                        <rect x="26.5" y="30" width="10" height="4.6" rx="1.4" fill="#c62f3b"/>
-                    </svg>
-                    <span class="logo__text"><span class="logo__name">Agentic AI Club</span><span class="logo__sub">Roux Institute · Northeastern</span></span>
-                </a>
-                <p class="footer__about">A student-led community exploring agentic AI through learning, experimentation and collaboration.</p>
-            </div>
-            <div><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li></ul></div>
-            <div><h4>Club</h4><ul><li><a href="about.html">Mission</a></li><li><a href="about.html">Participation</a></li></ul></div>
-            <div><h4>Connect</h4><ul><li><a href="about.html">Get involved</a></li></ul></div>
-        </div>
-        <div class="footer__bottom"><span>© <span data-year></span> Agentic AI Club</span><span>Roux Institute · Northeastern University</span></div>
-    </div>
+<div class="wrap">
+<div class="footer__grid">
+<div>
+<a aria-label="Agentic AI Club home" class="logo" href="#home">
+<svg aria-hidden="true" class="logo__mark" viewbox="0 0 48 48">
+<rect class="logo__tile" fill="#232a3b" height="48" rx="11" width="48"></rect>
+<path d="M15 14.5 24.5 24 15 33.5" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.6"></path>
+<rect fill="#c62f3b" height="4.6" rx="1.4" width="10" x="26.5" y="30"></rect>
+</svg>
+<span class="logo__text"><span class="logo__name">Agentic AI Club</span><span class="logo__sub">Roux Institute · Northeastern</span></span>
+</a>
+<p class="footer__about">A student-led community exploring agentic AI through learning, experimentation and collaboration.</p>
+</div>
+<div><h4>Explore</h4><ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li></ul></div>
+<div><h4>Club</h4><ul><li><a href="#about">Mission</a></li><li><a href="#about">Participation</a></li></ul></div>
+<div><h4>Connect</h4><ul><li><a href="#about">Get involved</a></li></ul></div>
+</div>
+<div class="footer__bottom"><span>© <span data-year=""></span> Agentic AI Club</span><span>Roux Institute · Northeastern University</span></div>
+</div>
 </footer>
 <script src="js/club.js"></script>
 </body>
