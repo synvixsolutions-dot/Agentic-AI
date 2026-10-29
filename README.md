@@ -51,17 +51,18 @@ keeping the content organized in separate files.
 -   **Google Fonts** --- IBM Plex Sans and IBM Plex Mono
 -   **Microsoft Forms** --- membership form link, where configured
 -   **Google Maps embed** --- location display on the Contact page
+-   **Vercel serverless function + Resend** --- emails Contact form
+    messages to the club inbox (`api/contact.js`)
 
-No application backend or database is defined as part of the front-end
-project. Forms only submit data if they are connected to a functioning
-external service or backend.
+There is no database. The Contact form is emailed through
+`api/contact.js`; club sign-ups are collected by Microsoft Forms.
 
 ## Project structure
 
 ``` text
 Agentic-AI-Kabilan/
-├── .vscode/
-│   └── settings.json
+├── api/
+│   └── contact.js
 ├── assets/
 │   ├── Build.gif
 │   ├── Collab.gif
@@ -81,6 +82,7 @@ Agentic-AI-Kabilan/
 ├── join.html
 ├── faq.html
 ├── contact.html
+├── .env.example
 └── README.md
 ```
 
@@ -180,6 +182,41 @@ that submitted information is stored, emailed, or delivered to an
 administrator. Confirm that each form is connected to its intended
 external form provider or backend and test a submission before
 publishing.
+
+### Contact form backend (`api/contact.js`)
+
+On Vercel, `api/contact.js` becomes `POST /api/contact`. It validates
+the message, drops bot submissions caught by a hidden `website` field,
+and emails the message through [Resend](https://resend.com) with
+Reply-To set to the sender, so organizers can answer with Reply.
+
+**Request:** JSON `{ name, email, topic, message, website }`, where
+`topic` is `join`, `collaborate`, `speak` or `general`, `message` is at
+most 500 characters, and `website` is the hidden honeypot field.
+
+**Responses:**
+
+-   `200 { ok: true }` --- sent (also returned for bot submissions,
+    which are silently dropped)
+-   `400 { ok: false, fields: [...] }` --- invalid fields
+-   `405` --- not a POST request
+-   `500` / `502` --- missing configuration or Resend error
+
+**Environment variables** (Vercel → Settings → Environment Variables;
+for local testing copy `.env.example` to `.env.local`, which git
+ignores):
+
+-   `RESEND_API_KEY` --- Resend API key. Never commit it.
+-   `CONTACT_TO` --- inbox that receives messages. **Currently a
+    personal test address; replace it with the official club inbox.**
+-   `CONTACT_FROM` --- optional. Until the club verifies its own domain
+    in Resend, leave it unset; Resend's test sender can only deliver to
+    the email address that owns the Resend account.
+
+The front end still needs to send the Contact form to `/api/contact`
+and show the success panel only when the response is `{ ok: true }`.
+
+### Join form
 
 The Join navigation action uses a Microsoft Forms link where configured.
 Verify that the link points to the intended public membership form. Also
