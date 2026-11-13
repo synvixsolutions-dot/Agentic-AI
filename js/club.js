@@ -452,3 +452,67 @@ if (clubContactForm) {
         clubContactForm.reset();
     });
 }
+
+
+/* Single-page navigation: smooth anchor jumps + active tab while scrolling. */
+(function () {
+    "use strict";
+    const nav = document.querySelector("#site-nav");
+    const toggle = document.querySelector(".nav-toggle");
+    if (!nav) return;
+
+    const links = Array.from(nav.querySelectorAll('a[data-nav-link]'));
+    const sections = links
+        .map((link) => document.getElementById(link.dataset.navLink))
+        .filter(Boolean);
+    if (!links.length || !sections.length) return;
+
+    function setActive(id) {
+        links.forEach((link) => {
+            if (link.dataset.navLink === id) link.setAttribute("aria-current", "page");
+            else link.removeAttribute("aria-current");
+        });
+    }
+
+    // Anchor links should stay on this page and scroll to the matching section.
+    links.forEach((link) => {
+        link.addEventListener("click", (event) => {
+            const id = link.dataset.navLink;
+            const target = document.getElementById(id);
+            if (!target) return;
+            event.preventDefault();
+            history.replaceState(null, "", "#" + id);
+            target.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+            setActive(id);
+            if (nav && toggle) {
+                nav.classList.remove("is-open");
+                toggle.setAttribute("aria-expanded", "false");
+            }
+        });
+    });
+
+    let scheduled = false;
+    function updateActiveOnScroll() {
+        scheduled = false;
+        const header = document.querySelector(".topbar");
+        const headerBottom = header ? header.getBoundingClientRect().bottom : 0;
+        const marker = headerBottom + Math.min(120, window.innerHeight * 0.22);
+        let current = sections[0];
+        for (const section of sections) {
+            if (section.getBoundingClientRect().top <= marker) current = section;
+            else break;
+        }
+        setActive(current.id);
+    }
+    function scheduleUpdate() {
+        if (scheduled) return;
+        scheduled = true;
+        window.requestAnimationFrame(updateActiveOnScroll);
+    }
+
+    window.addEventListener("scroll", scheduleUpdate, { passive: true });
+    window.addEventListener("resize", scheduleUpdate);
+    window.addEventListener("hashchange", scheduleUpdate);
+    window.addEventListener("load", scheduleUpdate);
+    updateActiveOnScroll();
+})();

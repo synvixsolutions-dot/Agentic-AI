@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Blog & Newsletter | Agentic AI Club</title>
-    <meta name="description" content="Insights, updates and stories from the Agentic AI Club.">
+
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/club.css">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
+
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
-<header class="topbar">
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+
+    <!-- =========================
+         NAVIGATION BAR
+    ========================== -->
+
+    <header class="topbar">
         <div class="wrap topbar__inner">
 
             <a class="logo" href="index.html" aria-label="Agentic AI Club home">
@@ -46,84 +59,430 @@
 
         </div>
     </header>
-<main id="main">
-    <section class="page-head">
-        <svg class="page-head__glyph" viewBox="0 0 200 200" aria-hidden="true">
-            <path d="M36 32 104 100 36 168" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <div class="wrap page-head__inner">
-            <div class="page-head__content">
-                <p class="kicker"><span class="kicker__prompt">&gt;_</span> Insights • Updates • Stories</p>
-                <h1>Blog &amp; Newsletter<span class="cursor" aria-hidden="true"></span></h1>
-                <p class="lead">Insights, updates and stories from the club.</p>
-            </div>
-        </div>
-    </section>
 
-    <section class="section blog-club-section">
-        <div class="wrap">
-            <div class="club-filter-row" aria-label="Blog categories">
-                <button class="club-filter active" data-filter="all">All</button>
-                <button class="club-filter" data-filter="news">News</button>
-                <button class="club-filter" data-filter="articles">Articles</button>
-                <button class="club-filter" data-filter="events">Events</button>
-                <button class="club-filter" data-filter="resources">Resources</button>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main id="main">
+
+
+        <!-- =========================
+             BLOG HERO
+        ========================== -->
+
+        <section class="page-head">
+            <svg class="page-head__glyph" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+                <path d="M36 32 104 100 36 168" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
+            <div class="wrap page-head__inner">
+                <div class="page-head__content">
+                   
+                    <h1>Blog & Newsletter<span class="cursor" aria-hidden="true"></span></h1>
+                    <p class="lead">Insights, updates and stories from the club.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- =========================
+             BLOG SECTION
+        ========================== -->
+
+        <section class="section blog-section container">
+
+
+            <!-- =========================
+                 FEATURED POST
+            ========================== -->
+
+            <div class="spotlight blog-spotlight">
+
+                <div>
+                    <span class="label">Featured post</span>
+                    <h2>The Future of Agentic AI</h2>
+                    <p class="spotlight__desc">
+                        Where AI agents are heading next, and what it means for the
+                        people building them.
+                    </p>
+
+                    <ul class="chips" aria-label="Post tags">
+                        <li>#agents</li>
+                        <li>#trends</li>
+                        <li>5 min read</li>
+                    </ul>
+
+                    <div class="spotlight__actions">
+                        <a href="#" class="btn btn--primary">
+                            Read More <span class="btn__arrow" aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <figure class="terminal" aria-label="Terminal listing the blog posts">
+                    <div class="terminal__bar" aria-hidden="true">
+                        <span></span><span></span><span></span>
+                        <p class="terminal__title">agentic-ai-club — zsh</p>
+                    </div>
+<pre class="terminal__body" data-type-target><span class="t-prompt">$</span> <span class="t-strong">ls blog/</span>
+<span class="t-dim">future-of-agentic-ai.md
+building-your-first-ai-agent.md
+top-tools-for-ai-development.md
+event-highlights-hackathon-2025.md</span>
+
+<span class="t-prompt">$</span> <span class="t-strong">cat future-of-agentic-ai.md</span> <span class="t-cursor" aria-hidden="true"></span></pre>
+                </figure>
+
             </div>
 
-            <div class="club-post-grid">
-                <article class="club-post-card" data-category="articles">
-                    <div class="club-post-image"><span>AI</span></div>
-                    <div class="club-post-content">
-                        <span class="label">Articles | 5 min read</span>
-                        <h3>The Future of Agentic AI</h3>
-                        <a href="#" class="editorial-link">Read More <span>→</span></a>
-                    </div>
-                </article>
-                <article class="club-post-card" data-category="articles">
-                    <div class="club-post-image"><span>AI</span></div>
-                    <div class="club-post-content">
-                        <span class="label">Articles | 7 min read</span>
-                        <h3>Building Your First AI Agent</h3>
-                        <a href="#" class="editorial-link">Read More <span>→</span></a>
-                    </div>
-                </article>
-                <article class="club-post-card" data-category="resources">
-                    <div class="club-post-image"><span>AI</span></div>
-                    <div class="club-post-content">
-                        <span class="label">Resources | 6 min read</span>
-                        <h3>Top Tools for AI Development</h3>
-                        <a href="#" class="editorial-link">Read More <span>→</span></a>
-                    </div>
-                </article>
-                <article class="club-post-card" data-category="events">
-                    <div class="club-post-image"><span>AI</span></div>
-                    <div class="club-post-content">
-                        <span class="label">Events | 4 min read</span>
-                        <h3>Event Highlights: Hackathon 2025</h3>
-                        <a href="#" class="editorial-link">Read More <span>→</span></a>
-                    </div>
-                </article>
-            </div>
-            <p class="club-empty-state" hidden>No posts found in this category.</p>
-        </div>
-    </section>
 
-    <section class="cta-band">
-        <div class="wrap club-newsletter">
-            <div>
-                <span class="label club-newsletter__label">Newsletter</span>
-                <h2>Subscribe to our Newsletter</h2>
-                <p>Get the latest updates, events and resources.</p>
+            <!-- =========================
+                 FILTERS + SEARCH
+            ========================== -->
+
+            <div class="toolbar blog-toolbar">
+
+                <div
+                    class="filter-row"
+                    role="group"
+                    aria-label="Blog categories"
+                >
+                    <button class="filter active" type="button" data-filter="all" aria-pressed="true">All</button>
+                    <button class="filter" type="button" data-filter="news" aria-pressed="false">News</button>
+                    <button class="filter" type="button" data-filter="articles" aria-pressed="false">Articles</button>
+                    <button class="filter" type="button" data-filter="events" aria-pressed="false">Events</button>
+                    <button class="filter" type="button" data-filter="resources" aria-pressed="false">Resources</button>
+                </div>
+
+                <label class="search">
+                    <span class="sr-only">Search posts</span>
+                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+                        <circle cx="7" cy="7" r="4.75"/>
+                        <path d="m10.5 10.5 3.5 3.5"/>
+                    </svg>
+                    <input type="search" placeholder="Search posts" data-blog-search>
+                </label>
+
             </div>
-            <form class="club-newsletter-form" novalidate>
-                <label class="sr-only" for="newsletter-email">Email address</label>
-                <input id="newsletter-email" type="email" placeholder="Enter your email" autocomplete="email" required>
-                <button class="btn btn--dark" type="submit">Subscribe</button>
-            </form>
-        </div>
-    </section>
-</main>
-<footer class="footer">
+
+            <p class="result-count" data-blog-count aria-live="polite"></p>
+
+
+            <!-- =========================
+                 BLOG CARDS
+            ========================== -->
+
+            <div class="post-grid">
+
+
+                <!-- CARD 1 -->
+
+                <article
+                    class="post-card"
+                    data-category="articles" data-tags="agents trends"
+                >
+
+                    <div class="post-image">
+
+                        <span class="post-file">$ cat future-of-agentic-ai.md</span>
+                        <span class="image-placeholder">
+                            AI
+                        </span>
+
+                    </div>
+
+
+                    <div class="post-content">
+
+                        <span class="post-meta">
+                            Articles | 5 min read
+                        </span>
+
+                        <h3>
+                            The Future of Agentic AI
+                        </h3>
+
+                        <ul class="chips post-tags" aria-label="Tags">
+                            <li>#agents</li>
+                            <li>#trends</li>
+                        </ul>
+
+                        <a
+                            href="#"
+                            class="read-more"
+                        >
+                            Read More
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- CARD 2 -->
+
+                <article
+                    class="post-card"
+                    data-category="articles" data-tags="agents tutorial"
+                >
+
+                    <div class="post-image">
+
+                        <span class="post-file">$ cat building-your-first-ai-agent.md</span>
+                        <span class="image-placeholder">
+                            AI
+                        </span>
+
+                    </div>
+
+
+                    <div class="post-content">
+
+                        <span class="post-meta">
+                            Articles | 7 min read
+                        </span>
+
+                        <h3>
+                            Building Your First AI Agent
+                        </h3>
+
+                        <ul class="chips post-tags" aria-label="Tags">
+                            <li>#agents</li>
+                            <li>#tutorial</li>
+                        </ul>
+
+                        <a
+                            href="#"
+                            class="read-more"
+                        >
+                            Read More
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- CARD 3 -->
+
+                <article
+                    class="post-card"
+                    data-category="resources" data-tags="tools dev"
+                >
+
+                    <div class="post-image">
+
+                        <span class="post-file">$ cat top-tools-for-ai-development.md</span>
+                        <span class="image-placeholder">
+                            AI
+                        </span>
+
+                    </div>
+
+
+                    <div class="post-content">
+
+                        <span class="post-meta">
+                            Resources | 6 min read
+                        </span>
+
+                        <h3>
+                            Top Tools for AI Development
+                        </h3>
+
+                        <ul class="chips post-tags" aria-label="Tags">
+                            <li>#tools</li>
+                            <li>#dev</li>
+                        </ul>
+
+                        <a
+                            href="#"
+                            class="read-more"
+                        >
+                            Read More
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- CARD 4 -->
+
+                <article
+                    class="post-card"
+                    data-category="events" data-tags="hackathon community"
+                >
+
+                    <div class="post-image">
+
+                        <span class="post-file">$ cat event-highlights-hackathon-2025.md</span>
+                        <span class="image-placeholder">
+                            AI
+                        </span>
+
+                    </div>
+
+
+                    <div class="post-content">
+
+                        <span class="post-meta">
+                            Events | 4 min read
+                        </span>
+
+                        <h3>
+                            Event Highlights: Hackathon 2025
+                        </h3>
+
+                        <ul class="chips post-tags" aria-label="Tags">
+                            <li>#hackathon</li>
+                            <li>#community</li>
+                        </ul>
+
+                        <a
+                            href="#"
+                            class="read-more"
+                        >
+                            Read More
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- Shown when a category has no posts -->
+
+            <p
+                class="empty-state"
+                hidden
+            >
+                No posts found in this category.
+            </p>
+
+        </section>
+
+
+
+        <!-- =========================
+             NEWSLETTER
+        ========================== 
+
+        <section class="newsletter-band">
+
+            <div class="container newsletter-inner">
+
+
+                 Newsletter text
+
+                <div class="newsletter-copy">
+
+                    <div class="newsletter-icon">
+                        ✉
+                    </div>
+
+                    <div>
+
+                        <h2>
+                            Subscribe to our Newsletter
+                        </h2>
+
+                        <p>
+                            Get the latest updates, events and resources.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                 Newsletter form 
+
+                <div class="newsletter-box">
+
+                    <form
+                        class="newsletter-form"
+                        novalidate
+                        data-newsletter
+                    >
+
+                        <div class="newsletter-fields">
+
+                            <div class="newsletter-field">
+                                <label class="sr-only" for="newsletter-name">First name</label>
+                                <input
+                                    id="newsletter-name"
+                                    name="name"
+                                    type="text"
+                                    placeholder="Your first name"
+                                    autocomplete="given-name"
+                                    aria-describedby="newsletter-name-error"
+                                >
+                                <p class="newsletter-error" id="newsletter-name-error" aria-live="polite"></p>
+                            </div>
+
+                            <div class="newsletter-field">
+                                <label class="sr-only" for="newsletter-email">Email address</label>
+                                <input
+                                    id="newsletter-email"
+                                    name="email"
+                                    type="email"
+                                    placeholder="Enter your email"
+                                    autocomplete="email"
+                                    aria-describedby="newsletter-email-error"
+                                >
+                                <p class="newsletter-error" id="newsletter-email-error" aria-live="polite"></p>
+                            </div>
+
+                        </div>
+
+                        <button
+                            class="btn btn--primary"
+                            type="submit"
+                        >
+                            Subscribe
+                        </button>
+
+                    </form>
+
+                    <div class="newsletter-success" data-newsletter-success tabindex="-1" hidden>
+                        <p class="kicker"><span class="kicker__prompt">$</span> subscribed</p>
+                        <h3>Thanks, <span data-newsletter-name></span>. You're in.</h3>
+                        <p>
+                            We'll send the latest updates, events and resources to
+                            <strong data-newsletter-email></strong>.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>-->
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== 
+
+    <footer class="footer">
         <div class="wrap">
 
             <div class="footer__grid">
@@ -159,6 +518,7 @@
                     <ul>
                         <li><a href="join.html">Join the club</a></li>
                         <li><a href="blog.html">Blog &amp; newsletter</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -167,19 +527,24 @@
                     <h4>Follow</h4>
                     <ul>
                         <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">X</a></li>
                         <li><a href="#">GitHub</a></li>
-                        <li><a href="#">Instagram</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="footer__bottom">
-                <span>© <span data-year>2026</span> Agentic AI Club</span>
-                <span>Roux Institute at Northeastern University · Portland, Maine</span>
+                <span>© 2025 Agentic AI Club. All rights reserved.</span>
             </div>
 
         </div>
-    </footer>
-<script src="js/club.js"></script>
+    </footer>-->
+
+
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+
 </body>
+
 </html>
